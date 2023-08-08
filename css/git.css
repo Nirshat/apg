@@ -1,0 +1,25 @@
+.gitBox{
+  /* border:1px solid; */
+  /* padding:1rem; */
+  margin:0 auto 10rem;
+  width:90%;
+}
+
+#gitContent{
+  text-align: center;
+}
+
+#mymessage{
+  width: 100%;
+  text-align: center;
+  margin:2em auto auto auto;
+  color:#444;
+}
+
+@media only screen and (min-width:800px) {
+  #mymessage{
+      width: 80%;
+      text-align: center;
+      margin:2em auto auto auto;
+  }
+}
