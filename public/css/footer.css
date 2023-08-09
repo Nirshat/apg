@@ -1,0 +1,10 @@
+.footerBox{
+  margin:24vh auto 0;
+  padding:2rem 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing:1px;
+  color:#444;
+  text-align: center;
+  --animate-duration: 0.5s;
+  /* background:#036e03e1; */
+}
