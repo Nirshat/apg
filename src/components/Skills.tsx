@@ -3,7 +3,7 @@ const Skills = () => {
   let frontend = [
     {
       tech: "HTML",
-      src: "rsrc-dev/green/github.png",
+      src: "images/html.png",
     },
     {
       tech: "CSS",
