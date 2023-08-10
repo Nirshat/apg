@@ -22,7 +22,7 @@ const Intro = () => {
           {/* <img src="./supporting files/me5.png" alt="" id="intropic" /> */}
         </div>
         <div className="intromsgbox">
-          <div className="hello">Hello, I'm Aron Paul.</div>
+          <div className="hello">Henlloooo, I'm Aron Paul.</div>
           <div className="intromsg">
             Doing web <span id="word1">design</span> and <span id="word2">development</span> things.
           </div>
