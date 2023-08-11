@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 // import Modal from "./Modal";
 import Dropdown from "./Dropdown";
 
@@ -59,12 +60,13 @@ const Header = () => {
         className="navbar bg-body-tertiary px-3 mb-3"
         style={headerStyle}
       >
+
         <Dropdown />
 
-        <div id="apg2">
-          @aronpaulgonzales
-        </div>
 
+        <div id="apg2">
+            @aronpaulgonzales
+        </div>
         <ul className="nav nav-pills" id="linksbox2">
           {navs.map((link, index) => (
             <li className="nav-item" id="navitem" key={index}>
