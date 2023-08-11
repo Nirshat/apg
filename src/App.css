@@ -14,6 +14,7 @@ body{
   /* border: 1px solid; */
   padding:2.5rem 0;
   color: #ffffff00;
+  font-size:0;
 }
 
 .contentBox{

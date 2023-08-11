@@ -52,8 +52,6 @@ const Contents = () => {
     contents.map((content, index) => (
       <div key={index}>
 
-        <div className="landing" id={content.pageId} data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">landing</div>
-
         <div className="landing" id={content.pageId}>landing</div>
 
         <div className="contentBox">
