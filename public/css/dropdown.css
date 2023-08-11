@@ -1,17 +1,19 @@
 .dropdown-menu{
   left:1rem !important;
-  background: #777777e3 !important;
+  background: #ffffff !important;
   border: none !important;
+    box-shadow:  3px 3px 5px #d8d8d8,
+  -3px -3px 5px #f0f0f0;
 }
 
 .dropdown-menu li a{
-  color:#fff;
+  color:#444;
   padding: 1rem;
 }
 
 .dropdown-menu li a:hover{
   /* font-weight: bold !important; */
   /* border: 1px solid #777; */
-  background-color: #bbb;
-  color:#fff;
+  background-color:#f0f0f0;
+  color:#444;
 }
