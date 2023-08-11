@@ -2,10 +2,10 @@
   margin:20px 0px 15px 0px;
   /* border:3px solid #22dd3b; */
   border: none;
-  padding:.8em;
+  padding:.6em .8em;
   border-radius: 8px;
   background:#0ab60a;
-  box-shadow:  3px 3px 10px #949494,
+  box-shadow:  3px 3px 10px #c7c7c7,
   -3px -3px 10px #eee;
   color:#eee;
   font-family: Phantomsans, sans-serif;
