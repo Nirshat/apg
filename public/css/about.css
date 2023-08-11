@@ -1,3 +1,5 @@
+/* Mobile POV */
+
 
 /* #about > .pageContent > .aboutIcons{
     text-align: end;
@@ -63,7 +65,20 @@
 }
 
 
+
+
+
+/* iPad POV */
 @media only screen and (min-width:700px){
+
+
+}
+
+
+
+
+/* Desktop POV */
+@media only screen and (min-width:1200px){
 
   .aboutflex{
     display: flex !important;
@@ -90,13 +105,6 @@
     z-index:5;
     opacity:1;
   }
-}
-
-/* @media only screen and (min-width:1200px){
-
-  .aboutflex{
-      display:block;
-  }
 
 }
-*/
+

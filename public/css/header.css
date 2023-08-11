@@ -22,7 +22,8 @@
 #apg1, #apg2{
   font-weight: bolder;
   letter-spacing:1px;
-  color:#083d08ea;
+  color:#063306ea;
+  cursor: pointer;
 }
 #apg1{
   font-size:14px;
@@ -61,5 +62,9 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#777 !important;
     font-weight: bold !important;
+  }
+
+  .nav-link:hover{
+    color:#444 !important;
   }
 }

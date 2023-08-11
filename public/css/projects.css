@@ -1,3 +1,4 @@
+/* mobile POV */
 .projList{
   width:100%;
   display: flex;
@@ -21,6 +22,7 @@
   /* box-shadow:  3px 3px 5px #e9e9e9,
   -3px -3px 5px #f0f0f0; */
   padding:1rem;
+  width:100%;
   height:100%;
   transition:.3s ease-out 60ms;
   cursor: pointer;
@@ -36,7 +38,7 @@
 }
 
 #projprev{
-  height:12em;
+  height:10em;
   width:100%;
 }
 
@@ -131,27 +133,30 @@
 } */
 
 
+
+
+/* iPad POV */
 @media only screen and (min-width:600px){
   .projList{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows:none;
-      width:100%;
-      /* border:1px solid #000; */
+    width:100%;
+    /* border:1px solid #000; */
   }
 
+
   #projprev{
-      height:25em;
-      width:100%;
+    height:12em;
+    width:auto;
   } 
 
   #projprev:hover{
     transform:scale(1.05);
   }
   
-
 }
 
+
+
+/* Desktop POV */
 @media only screen and (min-width:1200px){
 
   #pDiv{

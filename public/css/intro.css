@@ -1,18 +1,11 @@
 .intro{
   display: flex;
   flex-direction: column;
-  grid-gap:2.5rem;
-  align-items: center;
   margin-top:12vh;
   /* border: 1px solid; */
 }
 
-#intropic{
-  /* max-height:11rem;
-  width:11rem;
-  border-radius:100%;
-  box-shadow:  12px 12px 30px #535353,
-  -12px -12px 30px #ffffff; */
+#intropicbox, #intropic{
   display: none;
 }
 
@@ -24,6 +17,7 @@
   margin-bottom:1rem;
 }
 
+
 .intromsg{
   font-size:2em;
   font-weight: bold;
@@ -32,6 +26,8 @@
   letter-spacing:2px;
   line-height:2.5rem;
   text-shadow: 2px 4px 3px rgba(0,0,0,.1);
+  /* border: 1px solid; */
+  width:auto;
 }
 
 #word1, #word2{
@@ -40,8 +36,8 @@
 
 
 #introFooter{
-  text-align:start;
   margin-top:1rem;
+  /* border: 1px solid; */
 }
 
 
@@ -63,14 +59,36 @@
 
 
 @media only screen and (min-width:700px){
+  
   .hello{
     font-size:24px;
   }
 
+  #introFooter{
+    display: flex;
+    align-items: center;
+    grid-gap:2rem;
+    /* border: 1px solid; */
+  }
+
+  .intromsg{
+    font-size:3.5em;
+    line-height:4.5rem;
+  }
+
+
+  .introIcons a img{
+    height:3em;
+  }
+}
+
+
+@media only screen and (min-width:1000px){
   .intro{
     flex-direction: row;
     grid-gap:5rem;
-    align-items: center;
+    align-items:center;
+    /* border: 1px solid red; */
   }
 
   .intropicbox{
@@ -95,23 +113,5 @@
     height:100%;
     object-fit: cover;
     margin:auto;
-  }
-  
-  #introFooter{
-    display: flex;
-    align-items: center;
-    grid-gap:2rem;
-    margin-top:2rem;
-    /* border: 1px solid; */
-  }
-
-  .intromsg{
-    font-size:3.5em;
-    line-height:4.5rem;
-  }
-
-
-  .introIcons a img{
-    height:3em;
   }
 }
