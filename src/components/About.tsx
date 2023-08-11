@@ -4,7 +4,7 @@ const About = () => {
     <>
       <div className="aboutflex">
         <div id="mebox">
-          <h3 id="wi32do">what i love to do?</h3>
+          <h4 id="wi32do">what i love to do?</h4>
           <p className="p"> I'm a ambitious web developer and i wanted to share that before, I was interested in computer hardware and troubleshooting, leading me to pursue the BSIT course. However, my interests took a significant turn when we began our web development lessons. I discovered a newfound passion for creating websites, and since then, I have gained over three years of valuable hands-on experience in web development.
           </p>
 

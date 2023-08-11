@@ -3,6 +3,7 @@
   flex-direction: column;
   grid-gap:2.5rem;
   align-items: center;
+  margin-top:12vh;
   /* border: 1px solid; */
 }
 
@@ -29,6 +30,7 @@
   color:#0a4d0a;
   /* font-family: 'Franklin Gothic Medium'; */
   letter-spacing:2px;
+  line-height:2.5rem;
   text-shadow: 2px 4px 3px rgba(0,0,0,.1);
 }
 
@@ -39,7 +41,7 @@
 
 #introFooter{
   text-align:start;
-  margin-top:2.5rem;
+  margin-top:1rem;
 }
 
 
@@ -76,8 +78,8 @@
     max-height:34rem;
     width:34rem;
     border-radius:100%;
-    box-shadow:  12px 12px 30px #949494,
-    -12px -12px 30px #f7f7f7;
+    /* box-shadow:  12px 12px 30px #bdbdbd,
+    -12px -12px 30px #f7f7f7; */
     transition:.4s;
     overflow: hidden;
     /* position: relative; */
@@ -99,11 +101,13 @@
     display: flex;
     align-items: center;
     grid-gap:2rem;
+    margin-top:2rem;
     /* border: 1px solid; */
   }
 
   .intromsg{
     font-size:3.5em;
+    line-height:4.5rem;
   }
 
 

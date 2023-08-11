@@ -8,20 +8,19 @@
 
 .skillbox{
   font-weight:normal;
-  /* border:1px solid #ffffff7a; */
+  border:1px solid #eee;
   border-radius:5px;
-  background:transparent;
+  background:#f6fcff;
   text-align:center;
   padding:30px;
   /* background: #e0e0e0; */
-  box-shadow:  5px 5px 10px #b8b8b8,
-  -5px -5px 10px #f0f0f0;
+  /* box-shadow:  3px 3px 5px #e0e0e0,
+  -3px -3px 5px #f0f0f0; */
 }
 
-.skillbox:hover{
+/* .skillbox:hover{
   background:#add1e61a;
-  /* border: 1px solid #fff; */
-}
+} */
 
 
 .skillabel{
@@ -43,15 +42,16 @@
 .icons-holder{
   display: grid;
   grid-template-columns:repeat(3, auto);
-  grid-gap:40px;
+  grid-gap:1.5rem;
 
   justify-content: center;
   /* border:1px solid */
 }
 
 .icons-holder > div{
-  transition:0.5s ease-out 60ms;
+  transition:.3s ease-out 60ms;
   cursor:pointer;
+  padding:0;
 }
 
 .icons-holder > div:hover{
@@ -62,10 +62,11 @@
   color:#444;
   font-size: 12px;
   text-align: center;
+  padding:0;
 }
 
 #icons > img{
-  height:40px;
+  height:3rem;
   text-align: center;
 }
 

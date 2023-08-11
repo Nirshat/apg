@@ -15,6 +15,7 @@ const Intro = () => {
 
   return (
     <>
+    <div className="landing" id="introbox">landing</div>
     <div className="contentBox">
       <div className="intro">
         <div className="intropicbox">
@@ -22,9 +23,9 @@ const Intro = () => {
           {/* <img src="./supporting files/me5.png" alt="" id="intropic" /> */}
         </div>
         <div className="intromsgbox">
-          <div className="hello">Henlloooo, I'm Aron Paul.</div>
+          <div className="hello">Hello, I'm Aron Paul.</div>
           <div className="intromsg">
-            Doing web <span id="word1">design</span> and <span id="word2">development</span> things.
+            Doing web <span id="word1">design</span> and <span id="word2">development</span> stuff.
           </div>
 
           <div id="introFooter">

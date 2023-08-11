@@ -17,7 +17,7 @@ const Contents = () => {
     },
     {
       title: "New Tech",
-      descript: "What technologies i am currently learning?",
+      descript: "Technologies that i just started learning",
       value: <NewTech /> ,
       pageId: 'newtech',
     },
@@ -42,7 +42,7 @@ const Contents = () => {
   ];
 
 
-
+{/* <div className="landing" id={content.pageId}>landing</div> */}
 
   return (
     <>
@@ -50,10 +50,13 @@ const Contents = () => {
     <Intro />
     {
     contents.map((content, index) => (
-      <div className="contentBox" key={index}>
-        <div className="title" id={content.pageId}>{content.title}</div>
-        <div className="descript"> {content.descript} </div>
-        <div className="content"> {content.value} </div>
+      <div key={index}>
+        <div className="landing" id={content.pageId} data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">landing</div>
+        <div className="contentBox">
+          <div className="title">{content.title}</div>
+          <div className="descript"> {content.descript} </div>
+          <div className="content"> {content.value} </div>
+        </div>
       </div>
       ))
     }

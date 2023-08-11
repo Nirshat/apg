@@ -5,6 +5,10 @@
   width:90%;
 }
 
+#contentbox{
+  margin:1.5rem 0;
+}
+
 #gitContent{
   text-align: center;
 }

@@ -6,7 +6,7 @@ const Projects = () => {
       repo: "https://github.com/Nirshat/BCCATS",
       link: "https://github.com/Nirshat/BCCATS",
       aos: "zoom-in-right",
-      title: "BCC Alumni Tracking (capstone)",
+      title: "Alumni Tracking (capstone)",
       prev: "projImages/ac-dash.png",
       descr:
         "Developed a web app for administrator that organizes alumni data and allows the user to post an announcement of events.",
@@ -16,7 +16,7 @@ const Projects = () => {
       repo: "https://github.com/Nirshat/BCCATS",
       link: "https://github.com/Nirshat/BCCATS",
       aos: "zoom-in-right",
-      title: "BCC Alumni Website (capstone)",
+      title: "Alumni Website (capstone)",
       prev: "projImages/alumni-website.png",
       descr:
         "Developed a portal site for alumni that contains announcement of events and allows the user to update their employment status.",
@@ -52,7 +52,7 @@ const Projects = () => {
             <div id="divprev">
               <img src={val.prev} alt="" id="projprev" />
             </div>
-            <p> {val.descr} </p>
+            <p className="descProj"> {val.descr} </p>
             <div id="belowbox">
               <div id="techs">
                 {val.techs.map((tech, index) => (

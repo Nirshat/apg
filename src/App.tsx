@@ -1,7 +1,7 @@
 
 import './App.css'
-import '../node_modules/animate.css/animate.css'
 import '../public/css/header.css'
+import '../public/css/dropdown.css'
 import '../public/css/intro.css'
 import '../public/css/about.css'
 import '../public/css/newtech.css'

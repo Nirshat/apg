@@ -5,13 +5,18 @@
 }
 
 body{
-  background: #b4daf03d;
+  background: #b4daf03d !important;
   padding:0;
   margin:0;
 }
 
+.landing{  /* nav landing*/
+  /* border: 1px solid; */
+  padding:2.5rem 0;
+  color: #ffffff00;
+}
+
 .contentBox{
-  /* border:1px solid; */
   /* padding:1rem; */
   margin:0 auto 30rem;
   width:90%;
@@ -34,7 +39,7 @@ body{
 }
 
 .content{
-  margin: 4rem 0 0;
+  margin:4rem 0 0;
   /* border:1px solid; */
 }
 

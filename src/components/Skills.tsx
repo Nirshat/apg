@@ -3,50 +3,61 @@ const Skills = () => {
   let frontend = [
     {
       tech: "HTML",
-      src: "images/html.png",
+      // src: "images/html.png",
+      src: "https://skillicons.dev/icons?i=html",
     },
     {
       tech: "CSS",
-      src: "images/css.png",
+      // src: "images/css.png",
+      src: "https://skillicons.dev/icons?i=css",
     },
     {
       tech: "JavaScript",
-      src: "images/js.png",
+      // src: "images/js.png",
+      src: "https://skillicons.dev/icons?i=js",
     },
     {
       tech: "Bootstrap",
-      src: "images/bootstrap.png",
+      // src: "images/bootstrap.png",
+      src: "https://skillicons.dev/icons?i=bootstrap",
     },
     {
-      tech: "React.JS",
-      src: "images/react.png",
+      tech: "React",
+      // src: "images/react.png",
+      src: "https://skillicons.dev/icons?i=react",
     },
     {
-      tech: "Typescript",
-      src: "images/typescript.png",
+      tech: "TypeScript",
+      // src: "images/typescript.png",
+      src: "https://skillicons.dev/icons?i=ts",
     },
   ];
 
   let backend = [
     {
       tech: "Php",
-      src: "images/php.png",
+      // src: "images/php.png",
+      src: "https://skillicons.dev/icons?i=php",
     },
     {
       tech: "MySQL",
-      src: "images/mysql.png",
+      // src: "images/mysql.png",
+      src: "https://skillicons.dev/icons?i=mysql",
+    },
+    {
+      tech: "Node.js",
+      // src: "images/nodejs.png",
+      src: "https://skillicons.dev/icons?i=nodejs",
+    },
+    {
+      tech: "Express.js",
+      // src: "images/expressjs.png",
+      src: "https://skillicons.dev/icons?i=express",
     },
     {
       tech: "Laravel",
-      src: "images/laravel.png",
-    },
-    {
-      tech: "Node.JS",
-      src: "images/nodejs.png",
-    },
-    {
-      tech: "Express.JS",
-      src: "images/expressjs.png",
+      // src: "images/laravel.png",
+      src: "https://skillicons.dev/icons?i=laravel",
     },
   ];
 
@@ -56,16 +67,28 @@ const Skills = () => {
       src: "images/xampp.png",
     },
     {
-      tech: "GitHub",
-      src: "images/github.png",
-    },
-    {
       tech: "Canva",
       src: "images/canva.jpg",
     },
     {
       tech: "VS Code",
-      src: "images/vscode.png",
+      // src: "images/vscode.png",
+      src: "https://skillicons.dev/icons?i=vscode",
+    },
+    {
+      tech: "Vite.js",
+      // src: "images/vite.png",
+      src: "https://skillicons.dev/icons?i=vite",
+    },
+    {
+      tech: "GitHub",
+      // src: "images/github.png",
+      src: "https://skillicons.dev/icons?i=github",
+    },
+    {
+      tech: "Git",
+      // src: "images/git.png",
+      src: "https://skillicons.dev/icons?i=git",
     },
   ];
 
@@ -118,7 +141,7 @@ const Skills = () => {
 
         <div className="skillbox">
           <div className="skillabel">
-            <span> Dev. Tools </span> 
+            <span> Others </span> 
             <i className="fa-solid fa-screwdriver-wrench"></i>
           </div>
 
