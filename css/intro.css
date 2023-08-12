@@ -19,12 +19,12 @@
 
 
 .intromsg{
-  font-size:2em;
+  font-size:3em;
   font-weight: bold;
   color:#0a4d0a;
   /* font-family: 'Franklin Gothic Medium'; */
-  letter-spacing:2px;
-  line-height:2.5rem;
+  letter-spacing:1px;
+  line-height:3.5rem;
   text-shadow: 2px 4px 3px rgba(0,0,0,.1);
   /* border: 1px solid; */
   width:auto;
@@ -74,6 +74,7 @@
   .intromsg{
     font-size:3.5em;
     line-height:4.5rem;
+    letter-spacing:2px;
   }
 
 
