@@ -3,7 +3,7 @@
   width:100%;
   display: flex;
   flex-direction: column;
-  grid-gap:4rem;
+  grid-gap:2rem;
   justify-content: center;
   align-items: center;
   padding:0 ;
@@ -114,18 +114,24 @@
 }
 
 #projsrcbox i{
-  color: #eee;
   color: #777;
   font-size:20px;
 }
 
+/* #projsrcbox i:hover{
+  color:#444;
+} */
+
 #projsrc, #repo{
   transition: .3s;
-  
 }
 
 #projsrc:hover, #repo:hover{
   transform: scale(1.07);
+}
+
+#projsrcbox :hover{
+  color:#444;
 }
 
 /* .projList > div > img{
@@ -159,10 +165,6 @@
 /* Desktop POV */
 @media only screen and (min-width:1200px){
 
-  #pDiv{
-    width: auto;
-  }
-
   .projList{
       display:grid;
       grid-template-columns: 1fr 1fr;
@@ -171,6 +173,11 @@
       width:100%;
       /* border:1px solid #fff; */
   }
+
+  #pDiv{
+    width: auto;
+  }
+
 
   #projprev{
       height:14em;
