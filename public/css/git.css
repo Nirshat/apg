@@ -2,28 +2,96 @@
   /* border:1px solid; */
   /* padding:1rem; */
   margin:0 auto 10rem;
-  width:90%;
+  width:85%;
 }
 
-#contentbox{
-  margin:1.5rem 0;
+#contentBox{
+  margin:3rem auto;
 }
 
 #gitContent{
-  text-align: center;
+  display:flex;
+  flex-direction:column;
+  grid-gap:1rem;
 }
 
-#mymessage{
-  width: 100%;
-  text-align: center;
-  margin:2em auto auto auto;
-  color:#444;
+.contactbox{
+  display:flex;
+  grid-gap:.5rem;
+  width:100%;
+  padding:1rem;
+  border-radius:1rem;
+  border:1px solid #eee;
+  background:#f6fcff;
 }
+
+#contactIconBox{
+  width:fit-content;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+#contactIconBox img{
+  height:2.5rem;
+}
+
+#nameandlinkbox{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+#contactname{
+  font-size:14px;
+}
+
+
+#contactsrc a{
+  font-size:1em;
+  font-weight: bold;
+  text-decoration: none;
+  color:#143b14;
+}
+
+#contactsrc a:hover{
+  color:#000;
+  text-decoration:underline;
+}
+
+
 
 @media only screen and (min-width:800px) {
-  #mymessage{
-      width: 80%;
-      text-align: center;
-      margin:2em auto auto auto;
+  #gitContent{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content:space-between;
+    width:100%;
+    margin: auto;
+  }
+
+  .contactbox{
+    width:100%;
+    padding:1rem;
+    border-radius:1rem;
+    border:1px solid #eee;
+    background:#f6fcff;
+  }
+
+  #contactIconBox img{
+    height:3.5rem;
+  }
+
+  #contactsrc a{
+    font-size:1.1em;
+  }
+
+}
+
+
+@media only screen and (min-width:1000px){
+  #gitContent{
+    grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -30,20 +30,20 @@ const Intro = () => {
 
           <div id="introFooter">
             <div>
-              <a href="#proj">
+              <a href="#git">
                 <button className="buttons">
-                  projects 
-                  <i id="projIcon" className="fa-solid fa-diagram-project"></i>
+                  Let's Socialize!
+                  {/* <i id="projIcon" className="fa-solid fa-diagram-project"></i> */}
+                  <i id="projIcon" className="fa-solid fa-thumbs-up"></i>
                 </button>
               </a>
             </div>
-            <div className="introIcons">
+            {/* <div className="introIcons">
               <a target="_blank" href="mailto:aronpaulgonzales1215@gmail.com"><img src="./rsrc-dev/green/gmail.png" alt="" /></a>
               <a target="_blank" href="https://web.facebook.com/Namikaze1000"><img src="./rsrc-dev/green/fb.png" alt="" /></a>
               <a target="_blank" href="https://github.com/Nirshat"><img src="./rsrc-dev/green/github.png" alt="" /></a>
               <a target="_blank" href="https://linkedin.com/in/apg-1101yj"><img src="./rsrc-dev/green/linkedin.png" alt="" /></a>
-              {/* <a target="_blank" href="https://www.upwork.com/freelancers/~01279057677113aa81"><img src="./rsrc-dev/green/upwork.png" alt="" /></a> */}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ const Dropdown = () => {
       route: "#proj",
     },
     {
-      name: "Contact",
+      name: "Contacts",
       route: "#git",
     },
   ];

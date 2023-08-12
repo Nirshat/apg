@@ -36,7 +36,7 @@
 
 
 #introFooter{
-  margin-top:1rem;
+  margin-top:1.8rem;
   /* border: 1px solid; */
 }
 
@@ -68,7 +68,7 @@
     display: flex;
     align-items: center;
     grid-gap:2rem;
-    /* border: 1px solid; */
+    margin-top:1.6rem;
   }
 
   .intromsg{

@@ -55,7 +55,7 @@ const Contents = () => {
         <div className="landing" id={content.pageId}>landing</div>
 
         <div className="contentBox">
-          <div className="title">{content.title}</div>
+          <div className="title">{content.title}.</div>
           <div className="descript"> {content.descript} </div>
           <div className="content"> {content.value} </div>
         </div>

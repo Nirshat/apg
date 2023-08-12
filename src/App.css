@@ -19,9 +19,8 @@ body{
 
 .contentBox{
   /* padding:1rem; */
-  margin:0 auto 30rem;
+  margin:0 auto 10rem;
   width:85%;
-  /* border: 1px solid; */
 }
 
 .title{
@@ -50,9 +49,19 @@ body{
 }
 
 
-@media only screen and (min-width:800px){
+
+/* iPad POV */
+@media only screen and (min-width:700px){
   .contentBox{
-    width:85%;
+    margin:0 auto 18rem;
   }
-  
+}
+
+
+
+/* Desktop POV */
+@media only screen and (min-width:1000px){
+  .contentBox{
+    margin:0 auto 10rem;
+  }
 }

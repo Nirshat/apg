@@ -48,7 +48,7 @@ const Header = () => {
       route: "#proj",
     },
     {
-      name: "contact",
+      name: "contacts",
       route: "#git",
     },
   ];
@@ -65,7 +65,7 @@ const Header = () => {
 
 
         <div id="apg2">
-            @aronpaulgonzales
+            @aronpaulgonzales.
         </div>
         <ul className="nav nav-pills" id="linksbox2">
           {navs.map((link, index) => (

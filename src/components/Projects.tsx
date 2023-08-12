@@ -9,7 +9,7 @@ const Projects = () => {
       title: "Alumni Tracking (capstone)",
       prev: "projImages/ac-dash.png",
       descr:
-        "Developed a web app for administrator that organizes alumni data and allows the user to post an announcement of events.",
+        "Is a web application for administrator that organizes alumni data and allows the user to post an announcement of events.",
       techs: ["HTML", "CSS", "JS", "PHP", "MySQL", "Bootstrap"],
     },
     {
@@ -19,7 +19,7 @@ const Projects = () => {
       title: "Alumni Website (capstone)",
       prev: "projImages/alumni-website.png",
       descr:
-        "Developed a portal site for alumni that contains announcement of events and allows the user to update their employment status.",
+        "Is a portal site for alumni that contains announcement of events and allows the user to update their employment status.",
       techs: ["HTML", "CSS", "JS", "PHP", "MySQL"],
     },
     {
@@ -28,7 +28,7 @@ const Projects = () => {
       aos: "zoom-in-right",
       title: "Simple To-Do List",
       prev: "projImages/todolist.png",
-      descr: "Developed a simple to-do-list app to manage and organize tasks.",
+      descr: "Is a simple to-do-list app to manage and organize tasks.",
       techs: ["HTML", "CSS", "JS"],
     },
     {
@@ -38,7 +38,7 @@ const Projects = () => {
       title: "Simple Food Ordering",
       prev: "projImages/spos.png",
       descr:
-        "Developed a simple food ordering that will automatically compute total amount of order and change.",
+        "Is a simple food ordering that will automatically compute total amount of order and change.",
       techs: ["HTML", "CSS", "JS"],
     },
   ];
@@ -47,7 +47,7 @@ const Projects = () => {
     <>
       <div className="projList" id="proj">
         {projArr.map((val, index) => (
-          <div id="pDiv" data-aos="zoom-in-right" key={index}>
+          <div id="pDiv" key={index}>
             <div className="projTitle">{val.title}</div>
             <div id="divprev">
               <img src={val.prev} alt="" id="projprev" />
