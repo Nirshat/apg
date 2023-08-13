@@ -56,7 +56,7 @@ const Projects = () => {
             <div id="belowbox">
               <div id="techs">
                 {val.techs.map((tech, index) => (
-                  <div key={index}>{tech + " "}</div>
+                  <div key={index}>{tech}</div>
                 ))}
               </div>
 

@@ -15,8 +15,8 @@ const Intro = () => {
 
   return (
     <>
-    <div className="landing" id="introbox">landing</div>
-    <div className="contentBox">
+    <div className="contentBox" id="contentBox">
+      <div className="toplanding" id="introbox">landing</div>
       <div className="intro">
         <div className="intropicbox">
           <img src="./supporting files/digme5.png" alt="" id="intropic" />
@@ -47,6 +47,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
+      <div className="landing" id="introbox">landing</div>
     </div>
     </>
   )

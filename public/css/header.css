@@ -38,6 +38,12 @@
 }
 
 @media only screen and (min-width:700px){
+  #apg1{
+    margin-left:2rem;
+  }
+}
+
+@media only screen and (min-width:1000px){
   #navbar-box{
     padding:.8rem 0;
   }

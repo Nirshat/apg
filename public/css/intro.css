@@ -1,12 +1,38 @@
+#contentBox{
+  margin:0 auto;
+}
+
 .intro{
   display: flex;
   flex-direction: column;
-  margin-top:12vh;
-  /* border: 1px solid; */
 }
 
-#intropicbox, #intropic{
-  display: none;
+.toplanding{
+  padding:5rem 0;
+  color: #ffffff00;
+  /* color: #000000;
+  border: 1px solid; */
+  font-size:0;
+}
+
+.intropicbox{
+  max-height:10rem;
+  width:10rem;
+  border-radius:100%;
+  transition:.4s;
+  overflow: hidden;
+  margin:0 auto 1.5rem;
+}
+
+.intropicbox:hover{
+  transform: rotate(6deg);
+}
+
+#intropic{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  margin:auto;
 }
 
 .hello{
@@ -15,19 +41,21 @@
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   margin-bottom:1rem;
+  text-align: center;
 }
 
 
 .intromsg{
-  font-size:3em;
+  font-size:2em;
   font-weight: bold;
   color:#0a4d0a;
   /* font-family: 'Franklin Gothic Medium'; */
   letter-spacing:1px;
-  line-height:3.5rem;
+  line-height:2.9rem;
   text-shadow: 2px 4px 3px rgba(0,0,0,.1);
   /* border: 1px solid; */
   width:auto;
+  text-align: center;
 }
 
 #word1, #word2{
@@ -37,6 +65,7 @@
 
 #introFooter{
   margin-top:1.8rem;
+  text-align: center;
   /* border: 1px solid; */
 }
 
@@ -59,16 +88,18 @@
 
 
 @media only screen and (min-width:700px){
+
+  .toplanding{
+    padding:6rem;
+  }
+
+  .intropicbox{
+    max-height:12rem;
+    width:12rem;
+  }
   
   .hello{
     font-size:24px;
-  }
-
-  #introFooter{
-    display: flex;
-    align-items: center;
-    grid-gap:2rem;
-    margin-top:1.6rem;
   }
 
   .intromsg{
@@ -78,9 +109,17 @@
   }
 
 
-  .introIcons a img{
-    height:3em;
+  #introFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap:2rem;
+    margin-top:1.6rem;
   }
+
+  /* .introIcons a img{
+    height:3em;
+  } */
 }
 
 
@@ -92,8 +131,11 @@
     /* border: 1px solid red; */
   }
 
+  .toplanding{
+    padding:5rem;
+  }
+
   .intropicbox{
-    display: block;
     max-height:34rem;
     width:34rem;
     border-radius:100%;
@@ -109,10 +151,22 @@
   }
 
   #intropic{
-    display: block;
     width:100%;
     height:100%;
     object-fit: cover;
     margin:auto;
+  }
+
+  .hello{
+    text-align:start;
+  }
+
+  .intromsg, #introFooter{
+    text-align:start;
+    text-align: start;
+  }
+
+  #introFooter{
+    justify-content: flex-start;
   }
 }

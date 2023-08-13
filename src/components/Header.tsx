@@ -44,6 +44,10 @@ const Header = () => {
       route: "#skills",
     },
     {
+      name: "experience",
+      route: "#exp",
+    },
+    {
       name: "projects",
       route: "#proj",
     },

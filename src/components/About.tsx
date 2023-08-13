@@ -4,14 +4,14 @@ const About = () => {
     <>
       <div className="aboutflex">
         <div id="mebox">
-          <h4 id="wi32do">what i love to do?</h4>
+          <h5 id="wi32do">what i love to do?</h5>
           <p className="p"> I'm a ambitious web developer and i wanted to share that before, I was interested in computer hardware and troubleshooting, leading me to pursue the BSIT course. However, my interests took a significant turn when we began our web development lessons. I discovered a newfound passion for creating websites, and since then, I have gained over three years of valuable hands-on experience in web development.
           </p>
 
           <br />
           <a target="_blank" href="supporting files/cv.pdf">
             <button className="buttons" id="cvbtn">
-              <span className="text">Download CV <i id="faicons" className="fa-solid fa-circle-arrow-down"></i></span>
+              <span className="text">Resume <i id="faicons" className="fa-solid fa-arrow-up-right-from-square"></i></span>
             </button>
           </a>
 

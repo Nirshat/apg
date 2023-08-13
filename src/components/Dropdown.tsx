@@ -17,6 +17,10 @@ const Dropdown = () => {
       route: "#skills",
     },
     {
+      name: "Experience",
+      route: "#exp",
+    },
+    {
       name: "Projects",
       route: "#proj",
     },

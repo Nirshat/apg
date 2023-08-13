@@ -6,6 +6,7 @@ import GetInTouch from "./GetInTouch";
 import Intro from "./Intro";
 import Header from "./Header";
 import Footer from "./Footer";
+import Exp from "./Exp";
 
 const Contents = () => {
   const contents = [
@@ -28,8 +29,14 @@ const Contents = () => {
       pageId: 'skills',
     },
     {
+      title: "Experience",
+      descript: "What experiences have I undergone?",
+      value: <Exp /> ,
+      pageId:'exp',
+    },
+    {
       title: "Projects",
-      descript: "Recent Projects",
+      descript: "What projects i have done?",
       value: <Projects /> ,
       pageId: 'proj',
     },
@@ -51,13 +58,12 @@ const Contents = () => {
     {
     contents.map((content, index) => (
       <div key={index}>
-
-        <div className="landing" id={content.pageId}>landing</div>
-
         <div className="contentBox">
+          <div className="landing" id={content.pageId}>landing</div>
           <div className="title">{content.title}.</div>
-          <div className="descript"> {content.descript} </div>
+          <div className="descript"> - {content.descript} </div>
           <div className="content"> {content.value} </div>
+          <div className="landing">landing</div>
         </div>
       </div>
       ))
