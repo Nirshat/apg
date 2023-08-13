@@ -1,7 +1,6 @@
 .currtech{
   display: flex;
   grid-gap:3rem;
-  justify-content: center;
   flex-wrap: wrap;
   /* border: 1px solid; */
 }

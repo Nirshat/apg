@@ -5,9 +5,9 @@
   width:85%;
 }
 
-#contentBox{
-  margin:3rem auto;
-}
+/* #contentBox{
+  border:1px solid;
+} */
 
 #gitContent{
   display:flex;
