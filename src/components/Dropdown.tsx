@@ -1,34 +1,49 @@
+
+
 const Dropdown = () => {
   let items = [
     {
       name: "Home",
-      route: "#introbox",
+      route: 0,
     },
     {
       name: "About",
-      route: "#about",
+      route: 1,
     },
     {
       name: "New Tech.",
-      route: "#newtech",
+      route: 2,
     },
     {
       name: "Skills",
-      route: "#skills",
+      route: 3,
     },
     {
       name: "Experience",
-      route: "#exp",
+      route: 4,
     },
     {
       name: "Projects",
-      route: "#proj",
+      route: 5,
     },
     {
       name: "Contacts",
-      route: "#git",
+      route: 6,
     },
   ];
+
+
+
+  // const [navIndex, setNavIndex] = useState(currentPage);
+
+  // console.log(navIndex);
+  // const navHandler = (route:number) => {
+  //   if(route !== navIndex)
+  //     setNavIndex(route);
+  //     console.log(navIndex);
+  // }
+  // if route is not equal to the current value of navIndex, it will be updated
+  // else if it's equal to the current navIndex then nothing happenns 
 
   return (
     <>
@@ -45,7 +60,7 @@ const Dropdown = () => {
       <ul className="dropdown-menu">
         {items.map((item, index) => (
           <li key={index} id="litem">
-            <a className="dropdown-item" href={item.route}>
+            <a className="dropdown-item" role='button'>
               {item.name}
             </a>
           </li>

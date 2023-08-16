@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 
-// import Modal from "./Modal";
-import Dropdown from "./Dropdown";
+import Contents from "./Contents";
+
+
 
 const Header = () => {
   // Hide navbar/header on Scroll Down
@@ -32,30 +33,46 @@ const Header = () => {
 
   let navs = [
     {
+      no: 0,
       name: "home",
-      route: "#introbox",
+      pageId: 'introbox',
     },
     {
+      no: 1,
       name: "about",
-      route: "#about",
+      pageId: 'about',
     },
     {
+      no: 2,
       name: "skills",
-      route: "#skills",
+      pageId: 'skills',
     },
     {
+      no: 3,
       name: "experience",
-      route: "#exp",
+      pageId:'exp',
     },
     {
+      no: 4,
       name: "projects",
-      route: "#proj",
+      pageId: 'proj',
     },
     {
+      no: 5,
       name: "contacts",
-      route: "#git",
+      pageId: 'git',
     },
   ];
+
+
+  const [navIndex, setNavIndex] = useState(0);
+
+  const navHandler = (route:number) => {
+    if(route !== navIndex)
+      setNavIndex(route);
+  }
+  // if route is not equal to the current value of navIndex, it will be updated
+  // else if it's equal to the current navIndex then nothing happenns 
 
   return (
     <>
@@ -65,22 +82,50 @@ const Header = () => {
         style={headerStyle}
       >
 
-        <Dropdown />
 
-
-        <div id="apg2">
-            @aronpaulgonzales.
+        {/* Dropdown -start- */}
+        <div
+        className="nav-link dropdown-toggle"
+        id="apg1"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        >
+          @aronpaulgonzales
         </div>
+
+        <ul className="dropdown-menu">
+          {navs.map((item, index) => (
+            <li key={index} id="litem">
+              <a className="dropdown-item" role='button' onClick={() => navHandler(item.no)}>
+                {item.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+        {/* Dropdown -end- */}
+
+
+
+        {/* Navbar -start- */}
+        <div id="apg2">@aronpaulgonzales.</div>
         <ul className="nav nav-pills" id="linksbox2">
           {navs.map((link, index) => (
-            <li className="nav-item" id="navitem" key={index}>
-              <a className="nav-link" href={link.route}>
+            <li
+              className="nav-item"
+              id="navitem"
+              key={index}
+            >
+              <a className="nav-link" onClick={() => navHandler(link.no)} role="button">
                 {link.name}
               </a>
             </li>
           ))}
         </ul>
+        {/* Navbar -end- */}
       </nav>
+
+      <Contents contentVal={navIndex} />
     </>
   );
 };

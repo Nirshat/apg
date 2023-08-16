@@ -1,75 +1,82 @@
+import Intro from "./Intro";
 import About from "./About";
-import NewTech from "./NewTech";
 import Skills from "./Skills";
+import Exp from "./Exp";
 import Projects from "./Projects";
 import GetInTouch from "./GetInTouch";
-import Intro from "./Intro";
-import Header from "./Header";
 import Footer from "./Footer";
-import Exp from "./Exp";
 
-const Contents = () => {
-  const contents = [
+interface ContentProps {
+  contentVal: number;
+}
+
+
+// This serves as a blueprint or contract that specifies what properties an object of this type should have.
+// Para ma-access yung bawat attributes sa loob ng objects na parang normal array lang.
+interface ContentItem {
+  title: string;
+  descript: string;
+  value: JSX.Element; // JSX type
+  pageId: number;
+}
+
+const Contents = ({ contentVal }: ContentProps) => {
+  const contents: ContentItem[] = [
     {
-      title: "About",
+      title: "",
+      descript: "",
+      value: <Intro />,
+      pageId: 0,
+    },
+    {
+      title: "About.",
       descript: "Personal",
-      value: <About /> ,
-      pageId: 'about',
+      value: <About />,
+      pageId: 1,
     },
     {
-      title: "New Tech",
-      descript: "Technologies that i just started learning",
-      value: <NewTech /> ,
-      pageId: 'newtech',
-    },
-    {
-      title: "Skills",
+      title: "Skills.",
       descript: "What i can provide?",
-      value: <Skills /> ,
-      pageId: 'skills',
+      value: <Skills />,
+      pageId: 2,
     },
     {
-      title: "Experience",
+      title: "Experience.",
       descript: "What experiences have I undergone?",
-      value: <Exp /> ,
-      pageId:'exp',
+      value: <Exp />,
+      pageId: 3,
     },
     {
-      title: "Projects",
+      title: "Projects.",
       descript: "What projects i have done?",
-      value: <Projects /> ,
-      pageId: 'proj',
+      value: <Projects />,
+      pageId: 4,
     },
-    // {
-    //   title: "Get in touch",
-    //   descript: "",
-    //   value: <GetInTouch /> ,
-    //   pageId: 'git',
-    // },
+    {
+      title: "Contacts.",
+      descript: "",
+      value: <GetInTouch />,
+      pageId: 5,
+    },
   ];
 
 
-{/* <div className="landing" id={content.pageId}>landing</div> */}
+  const filteredContents = contents.filter(
+    (item) => item.pageId === contentVal
+  );
 
   return (
     <>
-    <Header />
-    <Intro />
-    {
-    contents.map((content, index) => (
-      <div key={index}>
-        <div className="contentBox">
-          <div className="landing" id={content.pageId}>landing</div>
-          <div className="title">{content.title}.</div>
-          <div className="descript"> - {content.descript} </div>
-          <div className="content"> {content.value} </div>
+      {filteredContents.map((item) => (
+        <div className="contentBox" key={item.pageId}>
           <div className="landing">landing</div>
+          <div className="title"> {item.title} </div>
+          <div className="descript"> {item.descript} </div>
+          <div className="content"> {item.value} </div>
+          <div className="landing"></div>
         </div>
-      </div>
-      ))
-    }
-    <GetInTouch />
-    <Footer />
+      ))}
+      <Footer />
     </>
   );
 };

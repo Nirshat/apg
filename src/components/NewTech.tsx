@@ -34,7 +34,7 @@ const NewTech = () => {
           <img src="https://skillicons.dev/icons?i=express" />
         </div>
 
-        <div className="alt">Express.js</div>
+        <div className="alt">Express</div>
       </div>
       
 

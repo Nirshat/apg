@@ -1,3 +1,4 @@
+import NewTech from "./NewTech";
 
 const Skills = () => {
   let frontend = [
@@ -35,14 +36,19 @@ const Skills = () => {
 
   let backend = [
     {
-      tech: "Php",
-      // src: "images/php.png",
-      src: "https://skillicons.dev/icons?i=php",
+      tech: "Python",
+      // src: "images/laravel.png",
+      src: "https://skillicons.dev/icons?i=python",
     },
     {
       tech: "MySQL",
       // src: "images/mysql.png",
       src: "https://skillicons.dev/icons?i=mysql",
+    },
+    {
+      tech: "Php",
+      // src: "images/php.png",
+      src: "https://skillicons.dev/icons?i=php",
     },
     {
       tech: "Node.js",
@@ -158,6 +164,15 @@ const Skills = () => {
             ))}
           </div>
         </div>
+
+        {/* <div className="skillbox">
+          <div className="skillabel">
+            <span> Technologies that i just started learning. </span> 
+          </div>
+          <div className="otherTopicBox">
+            <div className="content"> <NewTech /> </div>
+          </div>
+        </div> */}
       </div>
     </>
   );

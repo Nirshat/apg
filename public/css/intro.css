@@ -7,13 +7,6 @@
   flex-direction: column;
 }
 
-.toplanding{
-  padding:5rem 0;
-  color: #ffffff00;
-  /* color: #000000;
-  border: 1px solid; */
-  font-size:0;
-}
 
 .intropicbox{
   max-height:10rem;
@@ -89,10 +82,6 @@
 
 @media only screen and (min-width:700px){
 
-  .toplanding{
-    padding:6rem;
-  }
-
   .intropicbox{
     max-height:12rem;
     width:12rem;
@@ -128,11 +117,8 @@
     flex-direction: row;
     grid-gap:5rem;
     align-items:center;
+    justify-content: center;
     /* border: 1px solid red; */
-  }
-
-  .toplanding{
-    padding:5rem;
   }
 
   .intropicbox{
@@ -143,6 +129,7 @@
     -12px -12px 30px #f7f7f7; */
     transition:.4s;
     overflow: hidden;
+    margin:0;
     /* position: relative; */
   }
 

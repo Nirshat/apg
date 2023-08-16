@@ -15,8 +15,6 @@ const Intro = () => {
 
   return (
     <>
-    <div className="contentBox" id="contentBox">
-      <div className="toplanding" id="introbox">landing</div>
       <div className="intro">
         <div className="intropicbox">
           <img src="./supporting files/digme5.png" alt="" id="intropic" />
@@ -25,12 +23,12 @@ const Intro = () => {
         <div className="intromsgbox">
           <div className="hello">Hello, I'm Aron Paul.</div>
           <div className="intromsg">
-            Doing web <span id="word1">design</span> and <span id="word2">development</span> stuff.
+            Doing web <span id="word1">design</span> and <span id="word2">development</span> solutions.
           </div>
 
           <div id="introFooter">
             <div>
-              <a href="#git">
+              <a target="_blank" href="https://linkedin.com/in/apg-1101yj">
                 <button className="buttons">
                   Let's Socialize!
                   {/* <i id="projIcon" className="fa-solid fa-diagram-project"></i> */}
@@ -47,8 +45,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="landing" id="introbox">landing</div>
-    </div>
+
     </>
   )
 }

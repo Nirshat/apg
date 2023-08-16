@@ -40,28 +40,20 @@ const GetInTouch = () => {
 
   return (
     <>
-      <div className="landing" id="git">
-        landing
-      </div>
-      <div className="gitBox">
-        <div className="title">Contacts.</div>
-        <div className="content" id="contentBox">
-          <div id="gitContent">
-            {contactProps.map((item, index) => (
-              <div className="contactbox" key={index}>
-                <div id="contactIconBox">
-                  <img src={item.imgsrc} alt="" />
-                </div>
-                <div id="nameandlinkbox">
-                  <div id="contactname">{item.name}</div>
-                  <div id="contactsrc">
-                    <a target="_blank" href={item.link}>{item.prelink}</a>
-                  </div>
-                </div>
+      <div id="gitContent">
+        {contactProps.map((item, index) => (
+          <div className="contactbox" key={index}>
+            <div id="contactIconBox">
+              <img src={item.imgsrc} alt="" />
+            </div>
+            <div id="nameandlinkbox">
+              <div id="contactname">{item.name}</div>
+              <div id="contactsrc">
+                <a target="_blank" href={item.link}>{item.prelink}</a>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </>
   );

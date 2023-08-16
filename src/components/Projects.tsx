@@ -19,7 +19,7 @@ const Projects = () => {
       title: "Alumni Website (capstone)",
       prev: "projImages/alumni-website.png",
       descr:
-        "Is a portal site for alumni that contains announcement of events and allows the user to update their employment status.",
+        "Is a portal site for alumni that contains announcement of events and allows the user to update their status info.",
       techs: ["HTML", "CSS", "JS", "PHP", "MySQL"],
     },
     {
@@ -47,31 +47,16 @@ const Projects = () => {
     <>
       <div className="projList" id="proj">
         {projArr.map((val, index) => (
-          <div id="pDiv" key={index}>
-            <div className="projTitle">{val.title}</div>
-            <div id="divprev">
-              <img src={val.prev} alt="" id="projprev" />
-            </div>
-            <p className="descProj"> {val.descr} </p>
-            <div id="belowbox">
-              <div id="techs">
-                {val.techs.map((tech, index) => (
-                  <div key={index}>{tech}</div>
-                ))}
-              </div>
 
-              <div className="ext">
-                <a target="_blank" href={val.repo} id="repo">
-                  <div  id="projsrcbox">
-                    <i className="fa-solid fa-code-branch"></i>
-                  </div>
-                </a>
-                <a target="_blank" href={val.link} id="projsrc">
-                  <div  id="projsrcbox">
-                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                  </div>
-                </a>
-              </div>
+          <div className="card" key={index}>
+            <img src={val.prev} className="card-img-top" alt="..."/>
+            <div className="card-body">
+              <h5 className="card-title"><a target="_blank" href={val.link}>{val.title}</a></h5>
+              <p className="card-text">{val.descr}</p>
+            </div>
+
+            <div className="card-footer">
+              <a target="_blank" href={val.repo} className="btn btn-success">Github <i className="fa-brands fa-github"></i></a>
             </div>
           </div>
         ))}

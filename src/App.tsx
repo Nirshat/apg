@@ -11,7 +11,8 @@ import '../public/css/projects.css'
 import '../public/css/btns.css'
 import '../public/css/git.css'
 import '../public/css/footer.css'
-import Contents from './components/Contents'
+// import Contents from './components/Contents'
+import Header from './components/Header'
 
 const App = () => {
 
@@ -19,8 +20,7 @@ const App = () => {
     <>
     <div className="main-container">
       {/* this will handle the content */}
-
-      <Contents />
+      <Header />
     </div>
     </>
   )

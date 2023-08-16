@@ -5,6 +5,7 @@
   border-radius: 8px;
   background:#0ab60a;
   background:#0a4d0a;
+  background:#2e925b;
   border:1px solid #eee;
   color:#eee;
   /* color:#444; */
@@ -19,18 +20,18 @@
 .buttons:hover {
   background:#0ab60a;
   background:#0a4d0a;
+  background:#216337;
   border:1px solid #0a4d0a;
   box-shadow:  3px 3px 10px #c7c7c7,
   -3px -3px 10px #eee;
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
   /* border:3px solid #1fa105; */
 }
 
 
 @media only screen and (min-width:700px){
   
-  .buttons:hover {
+  /* .buttons:hover {
     transform: scale(1.05);
-    /* border:3px solid #1fa105; */
-  }
+  } */
 }
