@@ -1,4 +1,4 @@
-import NewTech from "./NewTech";
+
 
 const Skills = () => {
   let frontend = [
