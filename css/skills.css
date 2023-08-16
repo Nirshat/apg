@@ -2,17 +2,19 @@
   display:grid;
   grid-template-rows:repeat(3, 1fr);
   /* justify-content: center; */
-  grid-gap:1.5em;
+  grid-gap:4em;
+  /* border: 1px solid; */
 }
 
 
 .skillbox{
   font-weight:normal;
-  border:1px solid #eee;
+  /* border:1px solid #ccc; */
   border-radius:5px;
-  background:#f6fcff;
+  width: auto;
+  /* background:#f6fcff; */
   text-align:center;
-  padding:30px;
+  /* padding:1.5rem; */
   /* background: #e0e0e0; */
   /* box-shadow:  3px 3px 5px #e0e0e0,
   -3px -3px 5px #f0f0f0; */
@@ -25,12 +27,12 @@
 
 .skillabel{
   font-size:16px;
-  text-align: center;
-  margin-bottom:1.7rem;
+  margin-bottom:1rem;
   padding:5px;
   color:#333;
   font-weight: bold;
   /* border:1px solid; */
+  text-align: start;
 }
 
 .skillabel > i{
@@ -40,18 +42,21 @@
 
 
 .icons-holder{
-  display: grid;
-  grid-template-columns:repeat(3, auto);
-  grid-gap:1.5rem;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap:1rem;
 
-  justify-content: center;
+  justify-content: flex-start;
+  /* align-items: flex-start; */
   /* border:1px solid */
 }
 
 .icons-holder > div{
   transition:.3s ease-out 60ms;
   cursor:pointer;
-  padding:0;
+  padding:6px;
+  background:#444;
+  border-radius:8px;
 }
 
 .icons-holder > div:hover{
@@ -60,10 +65,12 @@
 
 #alt{
   color:#444;
+  color:#f2f2f2;
   font-size: 12px;
   text-align: center;
   padding:0;
 }
+
 
 #icons > img{
   height:3rem;
@@ -82,17 +89,11 @@
       /* border:1px solid; */
   }
 
-  .skillbox{
-      padding:30px;
-      /* border:1px solid #ffffff7a;  */
-  }
-
 
   .skillabel{
       font-size:16px;
       /* border:1px solid; */
       padding:5px;
-      text-align:center;
       font-weight:bold;
   }
 
@@ -107,7 +108,9 @@
   .tech{
       display:grid;
       grid-template-columns:repeat(3, 1fr);
-      grid-template-rows:none;
+      grid-gap:6rem;
+      /* width:75%; */
+      /* flex-wrap: wrap; */
       /* grid-gap:30px; */
       /* border:1px solid; */
   }

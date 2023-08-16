@@ -1,14 +1,30 @@
+
+
+.otherTopicBox .descript{
+  font-size:16px;
+  /* margin-bottom:.1rem; */
+  color:#333;
+  font-weight: bold;
+}
+
+.otherTopicBox .content{
+  margin:1rem 0 0;
+}
+
 .currtech{
   display: flex;
-  grid-gap:3rem;
+  grid-gap:1.5rem;
   flex-wrap: wrap;
-  /* border: 1px solid; */
+  margin:0;
 }
 
 
 .nt-holder{
   transition:0.3s ease-out 60ms;
   cursor:pointer;
+  padding:6px;
+  background:#444;
+  border-radius:8px;
 }
 
 .nt-holder:hover{
@@ -16,14 +32,19 @@
 }
 
 .alt{
+  color:#f2f2f2;
+  font-size: 12px;
   text-align: center;
-  /* border: 1px solid; */
-  margin-top:.5rem;
+  padding:4px .8rem;
 }
 
-.icons > img{
-  height:5rem;
+.nt-holder .icons{
+  /* border:1px solid #fff; */
   text-align: center;
+}
+
+.nt-holder .icons  img{
+  height:3rem;
 }
 
 
