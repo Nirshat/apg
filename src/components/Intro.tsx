@@ -23,7 +23,7 @@ const Intro = () => {
         <div className="intromsgbox">
           <div className="hello">Hello, I'm Aron Paul.</div>
           <div className="intromsg">
-            Doing web <span id="word1">design</span> and <span id="word2">development</span> solutions.
+            Providing web solutions for <span id="word1">design</span> and <span id="word2">development</span>.
           </div>
 
           <div id="introFooter">
