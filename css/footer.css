@@ -1,7 +1,11 @@
-.footerBox{
+.footerBox-light, .footerBox-dark{
   padding:2rem 1.4rem;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing:1px;
   color:#444;
   text-align: center;
+}
+
+.footerBox-dark{
+  color:#818181;
 }

@@ -6,7 +6,7 @@
   background:#0ab60a;
   background:#0a4d0a;
   background:#2e925b;
-  border:1px solid #eee;
+  /* border:1px solid #eee; */
   color:#eee;
   /* color:#444; */
   font-family: Phantomsans, sans-serif;
@@ -21,9 +21,9 @@
   background:#0ab60a;
   background:#0a4d0a;
   background:#216337;
-  border:1px solid #0a4d0a;
+  /* border:1px solid #0a4d0a;
   box-shadow:  3px 3px 10px #c7c7c7,
-  -3px -3px 10px #eee;
+  -3px -3px 10px #eee; */
   /* transform: scale(1.02); */
   /* border:3px solid #1fa105; */
 }

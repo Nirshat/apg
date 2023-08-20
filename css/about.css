@@ -33,16 +33,28 @@
 }
 
 
-#wi32do{
-  color:#0a4d0a;
+#wi32do-light, #wi32do-dark{
   text-shadow: 2px 4px 3px rgba(0,0,0,.1);
 }
 
-.p {
+#wi32do-light{
+  color:#0a4d0a; 
+}
+#wi32do-dark{
+  color:#bbb
+}
+
+.p-light, .p-dark{
   line-height: 1.8em;
   margin: 0;
   color:#444;
   text-align: justify;
+}
+.p-light{
+  color:#444;
+}
+.p-dark{
+  color:#aaa;
 }
 
 .cwm{

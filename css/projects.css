@@ -15,9 +15,14 @@
   background:#fff !important;
 }
 
-.card-title a{
+#linklight, #linkdark{
   text-decoration:underline;
+}
+#linklight{
   color:#444;
+}
+#linkdark{
+  color:#ccc;
 }
 
 
@@ -37,11 +42,11 @@
     height:12rem;
   }
 
-  .card-title a{
+  #linklight, #linkdark{
     text-decoration: none;
   }
 
-  .card-title a:hover{
+  #linklight:hover, #linkdark:hover{
     text-decoration: underline;
   } 
   

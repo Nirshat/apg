@@ -1,16 +1,5 @@
-/* .header-box{
-  width:85%;
-  margin:0 auto 16vh;
-  padding:2rem 0;
-  font-weight: bolder;
-  letter-spacing:1px;
-  color:#083d08ea;
-  font-size:14px;
-} */
- 
-#navbar-box{
-  background: #f3feffea !important;
-  /* box-shadow:  3px 3px 1px #f8f8f8,
+#navbar-box-light, #navbar-box-dark{
+    /* box-shadow:  3px 3px 1px #f8f8f8,
   -3px -3px 1px #eee; */
   position: fixed;
   width: 100%;
@@ -19,39 +8,77 @@
   padding:1.3rem 0;
 }
 
-#apg1, #apg2{
+#navbar-box-light{
+  background: #f3feffea !important;
+}
+
+#navbar-box-dark{
+  background: #101010 !important;
+}
+
+
+
+#apg1-light, #apg2-light, #apg1-dark, #apg2-dark{
   font-weight: bolder;
   letter-spacing:1px;
-  color:#063306ea;
   cursor: pointer;
 }
-#apg1{
+
+#apg2-light, #apg2-dark{
+  display: none;
+}
+
+#navitem{
+  display: none;
+}
+
+#apg1-light, #apg1-dark{
   font-size:14px;
   /* border: 1px solid; */
 }
-#apg2{
-  display: none;
+
+
+
+
+/* Light Mode */
+#apg1-light, #apg2-light{
+  color:#063306ea;
 }
 
-#linksbox2{
-  display: none;
+/* Dark Mode */
+#apg1-dark, #apg2-dark{
+  color:#aaa;
 }
 
+#special-nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center;
+}
+
+
+
+/* iPad */
 @media only screen and (min-width:700px){
-  #apg1{
+  #apg1-light, #apg1-dark{
     margin-left:2rem;
   }
 }
 
+
+
+
+/* Desktop */
 @media only screen and (min-width:1000px){
   #navbar-box{
     padding:.8rem 0;
   }
 
-  #apg1{
+  #apg1-light, #apg1-dark{
     display: none;
   }
-  #apg2{
+  #apg2-light, #apg2-dark{
     display: block;
     margin-left:2rem;
     font-size:15px;
@@ -64,13 +91,33 @@
     display:flex;
   }
 
-  .nav-link{
+  #navitem{
+    display: block;
+  }
+
+
+
+  #nav-link-light, #nav-link-dark{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:#777 !important;
     font-weight: bold !important;
   }
 
-  .nav-link:hover{
-    color:#444 !important;
+
+
+  /* Light Mode */
+  #nav-link-light{
+    color:#777 !important;
+  }
+  #nav-link-light:hover{
+    color:#333 !important;
+  }
+
+
+  /* Dark Mode */
+  #nav-link-dark{
+    color: #aaa;
+  }
+  #nav-link-dark:hover{
+    color: #f2f2f2;
   }
 }
