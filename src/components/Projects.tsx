@@ -1,6 +1,11 @@
 // import '../../public/projImages'
 
-const Projects = () => {
+
+interface Mode{
+  mode:string;
+}
+
+const Projects = ({mode}: Mode) => {
   let projArr = [
     {
       repo: "https://github.com/Nirshat/BCCATS",
@@ -48,14 +53,14 @@ const Projects = () => {
       <div className="projList" id="proj">
         {projArr.map((val, index) => (
 
-          <div className="card" key={index}>
+          <div className={mode === "light" ? 'card' : 'card text-bg-dark'}  key={index}>
             <img src={val.prev} className="card-img-top" alt="..."/>
             <div className="card-body">
-              <h5 className="card-title"><a target="_blank" href={val.link}>{val.title}</a></h5>
+              <h5 className="card-title"><a id={mode === "light" ? 'linklight' : 'linkdark'} target="_blank" href={val.link}>{val.title}</a></h5>
               <p className="card-text">{val.descr}</p>
             </div>
 
-            <div className="card-footer">
+            <div className={mode === "light" ? 'card-footer' : 'card-footer text-bg-dark'} >
               <a target="_blank" href={val.repo} className="btn btn-success">Github <i className="fa-brands fa-github"></i></a>
             </div>
           </div>

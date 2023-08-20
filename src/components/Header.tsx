@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 
 import Contents from "./Contents";
+import Theme from "../context/Theme";
 
 
 
@@ -74,10 +75,15 @@ const Header = () => {
   // if route is not equal to the current value of navIndex, it will be updated
   // else if it's equal to the current navIndex then nothing happenns 
 
+
+  const {mode, toggleMode} = useContext(Theme);
+
+
+
   return (
     <>
       <nav
-        id="navbar-box"
+        id={mode === "light" ? 'navbar-box-light' : 'navbar-box-dark' }
         className="navbar bg-body-tertiary px-3 mb-3"
         style={headerStyle}
       >
@@ -86,7 +92,7 @@ const Header = () => {
         {/* Dropdown -start- */}
         <div
         className="nav-link dropdown-toggle"
-        id="apg1"
+        id={mode === "light" ? 'apg1-light' : 'apg1-dark' }
         role="button"
         data-bs-toggle="dropdown"
         aria-expanded="false"
@@ -94,9 +100,9 @@ const Header = () => {
           @aronpaulgonzales
         </div>
 
-        <ul className="dropdown-menu">
+        <ul className="dropdown-menu dropdown-menu-dark" id={mode === "light" ? 'dropdown-light' : 'dropdown-dark' }>
           {navs.map((item, index) => (
-            <li key={index} id="litem">
+            <li key={index}>
               <a className="dropdown-item" role='button' onClick={() => navHandler(item.no)}>
                 {item.name}
               </a>
@@ -107,8 +113,10 @@ const Header = () => {
 
 
 
+        {/* {mode === "light" ? '' : '' } */}
+
         {/* Navbar -start- */}
-        <div id="apg2">@aronpaulgonzales.</div>
+        <div id={mode === "light" ? 'apg2-light' : 'apg2-dark' }>@aronpaulgonzales.</div>
         <ul className="nav nav-pills" id="linksbox2">
           {navs.map((link, index) => (
             <li
@@ -116,18 +124,27 @@ const Header = () => {
               id="navitem"
               key={index}
             >
-              <a className="nav-link" onClick={() => navHandler(link.no)} role="button">
+              <a className="nav-link" id={mode === "light" ? 'nav-link-light' : 'nav-link-dark' } onClick={() => navHandler(link.no)} role="button">
                 {link.name}
               </a>
             </li>
           ))}
+
+          <li id="special-nav" className="nav-item">
+            <label className="ui-switch">
+              <input type="checkbox" onChange={toggleMode} />
+              <div className="slider">
+                <div className="circle"></div>
+              </div>
+            </label>
+          </li>
         </ul>
         {/* Navbar -end- */}
       </nav>
 
 
       {/* Containing Contents */}
-      <Contents contentVal={navIndex} />
+      <Contents contentVal={navIndex} modeVal={mode} />
     </>
   );
 };

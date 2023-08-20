@@ -28,21 +28,25 @@
   margin:auto;
 }
 
-.hello{
-  font-size:19px;
-  letter-spacing: 1px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
+.hello-light, .hello-dark{
+  font-size:17px;
+  letter-spacing:1px;
+  font-family: Fira Code;
+  /* font-weight: bold; */
   margin-bottom:1rem;
   text-align: center;
+  color:#444;
+}
+
+.hello-dark{
+  color:#bbb;
 }
 
 
-.intromsg{
-  font-size:2em;
+.intromsg-light, .intromsg-dark{
+  font-size:2.5em;
   font-weight: bold;
-  color:#0a4d0a;
-  /* font-family: 'Franklin Gothic Medium'; */
+  font-family: Kanit;
   letter-spacing:1px;
   line-height:2.9rem;
   text-shadow: 2px 4px 3px rgba(0,0,0,.1);
@@ -51,8 +55,18 @@
   text-align: center;
 }
 
+.intromsg-light{
+  color:#0a4d0a;
+}
+.intromsg-dark{
+  color:#c4c4c4;
+}
+
+
+
 #word1, #word2{
   color:#0dcc0d;
+  font-family: Kanit;
 }
 
 
@@ -87,11 +101,11 @@
     width:12rem;
   }
   
-  .hello{
-    font-size:24px;
+  .hello-light, .hello-dark{
+    font-size:23px;
   }
 
-  .intromsg{
+  .intromsg-light, .intromsg-dark{
     font-size:3.5em;
     line-height:4.5rem;
     letter-spacing:2px;
@@ -144,11 +158,11 @@
     margin:auto;
   }
 
-  .hello{
+  .hello-light, .hello-dark{
     text-align:start;
   }
 
-  .intromsg, #introFooter{
+  .intromsg-light, .intromsg-dark, #introFooter{
     text-align:start;
     text-align: start;
   }

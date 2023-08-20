@@ -1,13 +1,21 @@
 *{
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
-  transition: .3s;
+  transition: .3s !important;
 }
 
 body{
-  background: #b4daf03d !important;
+  /* background: #b4daf03d !important; */
   padding:0;
   margin:0;
+}
+
+.main-container-light{
+  background: #b4daf03d;
+}
+
+.main-container-dark{
+  background: #111;
 }
 
 .landing{  /* nav landing*/
@@ -24,7 +32,7 @@ body{
   width:85%;
 }
 
-.title{
+.title-light, .title-dark{
   font-size:2rem;
   font-weight: bold;
   /* border:1px solid gray; */
@@ -33,11 +41,24 @@ body{
   text-shadow: 2px 4px 3px rgba(0,0,0,.1);
 }
 
-.descript{
+.title-light{
+  color: #0a4d0a;
+}
+.title-dark{
+  color: #0dcc0d;
+}
+
+.descript-light, .descript-dark{
   /* border:1px solid green;  */
   margin:.2rem 0 0;
-  color:#555;
   font-size:.9rem;
+}
+
+.descript-light{
+  color:#555;
+}
+.descript-dark{
+  color:#aaa;
 }
 
 .content{

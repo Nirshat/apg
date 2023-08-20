@@ -1,19 +1,10 @@
-.dropdown-menu{
-  left:1rem !important;
-  background: #ffffff !important;
-  border: none !important;
-    box-shadow:  3px 3px 5px #ddd,
-  -3px -3px 5px #f0f0f0;
+#dropdown-light, #dropdown-dark{
+  left:1rem;
+  border: none;
+  /* box-shadow:  3px 3px 5px #ddd,
+  -3px -3px 5px #f0f0f0; */
 }
 
-.dropdown-menu li a{
-  color:#444;
+#dropdown-light li a, #dropdown-dark li a{
   padding: 1rem;
-}
-
-.dropdown-menu li a:hover{
-  /* font-weight: bold !important; */
-  /* border: 1px solid #777; */
-  background-color:#f0f0f0;
-  color:#444;
 }

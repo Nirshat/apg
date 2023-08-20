@@ -1,4 +1,3 @@
-
 import './App.css'
 import '../public/css/header.css'
 import '../public/css/dropdown.css'
@@ -11,17 +10,22 @@ import '../public/css/projects.css'
 import '../public/css/btns.css'
 import '../public/css/git.css'
 import '../public/css/footer.css'
-// import Contents from './components/Contents'
+import '../public/css/toggle.css'
+
+
 import Header from './components/Header'
+import ThemeProvider from './components/ThemeProvider'
+
+
 
 const App = () => {
 
   return (
     <>
-    <div className="main-container">
-      {/* this will handle the content */}
-      <Header />
-    </div>
+      <ThemeProvider>
+          {/* this will handle the content */}
+          <Header />
+      </ThemeProvider>
     </>
   )
 }

@@ -1,5 +1,9 @@
 
-const Intro = () => {
+interface Mode{
+  mode: string;
+}
+
+const Intro = ({mode}: Mode) => {
   // let msg = [
   //   'My expertise lies in the realm of web design and development.',
   //   'My expertise lies in designing and developing web-related projects.',
@@ -21,8 +25,8 @@ const Intro = () => {
           {/* <img src="./supporting files/me5.png" alt="" id="intropic" /> */}
         </div>
         <div className="intromsgbox">
-          <div className="hello">Hello, I'm Aron Paul.</div>
-          <div className="intromsg">
+          <div className={mode === "light" ? 'hello-light' : 'hello-dark'}>Hello, I'm Aron Paul.</div>
+          <div className={mode === "light" ? 'intromsg-light' : 'intromsg-dark'}>
             Providing web solutions for <span id="word1">design</span> and <span id="word2">development</span>.
           </div>
 

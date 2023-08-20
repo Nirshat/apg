@@ -1,8 +1,12 @@
 
-const Exp = () => {
+interface Mode{
+  mode:string;
+}
+
+const Exp = ({mode}: Mode) => {
   return (
     <>
-      <div className="expBox">
+      <div className={mode === "light" ? 'expBox-light' : 'expBox-dark'}>
         <span id="role"> <b>Full-stack Developer</b> (Hands-on Exp.) </span>
         <span> Alumni Tracking System (Capstone Project) </span>
         <span> <i>Jan. 2023 - April 2023</i> </span>

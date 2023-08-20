@@ -25,17 +25,27 @@
 } */
 
 
-.skillabel{
+.skillabel-l, .skillabel-d{
   font-size:16px;
   margin-bottom:1rem;
   padding:5px;
-  color:#333;
   font-weight: bold;
   /* border:1px solid; */
   text-align: start;
 }
 
-.skillabel > i{
+.skillabel-l{
+  color:#333;
+}
+
+.skillabel-d{
+  color:#aaa;
+}
+
+
+
+
+.skillabel-l i, .skillabel-d i{
   /* color:#2fff4b; */
   margin-left:5px !important;
 }
@@ -51,7 +61,7 @@
   /* border:1px solid */
 }
 
-.icons-holder > div{
+.iconbox-light, .iconbox-dark{
   transition:.3s ease-out 60ms;
   cursor:pointer;
   padding:6px;
@@ -59,7 +69,14 @@
   border-radius:8px;
 }
 
-.icons-holder > div:hover{
+.iconbox-light{
+  background:#444;
+}
+.iconbox-dark{
+  background: #222;
+}
+
+.iconbox-light:hover,.iconbox-dark:hover{
   transform: scale(1.2);
 }
 
@@ -90,14 +107,14 @@
   }
 
 
-  .skillabel{
+  .skillabel-l, .skillabel-d{
       font-size:16px;
       /* border:1px solid; */
       padding:5px;
       font-weight:bold;
   }
 
-  .skillabel > i{
+  .skillabel-l i, .skillabel-d i{
       /* color:#2fff4b; */
       margin-left:5px;
   }
