@@ -100,8 +100,8 @@ const Header = () => {
           @aronpaulgonzales
         </div>
 
-        <ul className="dropdown-menu dropdown-menu-dark" id={mode === "light" ? 'dropdown-light' : 'dropdown-dark' }>
-          {navs.map((item, index) => (
+        <ul className={mode === "light" ? 'dropdown-menu dropdown-menu-light': 'dropdown-menu dropdown-menu-dark'}  id="durapdownu">
+          {navs.map((item, index) => ( 
             <li key={index}>
               <a className="dropdown-item" role='button' onClick={() => navHandler(item.no)}>
                 {item.name}

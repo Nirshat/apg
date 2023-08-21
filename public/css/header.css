@@ -5,7 +5,7 @@
   width: 100%;
   top:0;
   z-index:6;
-  padding:1.3rem 0;
+  padding:1.3rem 1.5rem !important;
 }
 
 #navbar-box-light{
@@ -55,6 +55,8 @@
   flex-direction: column;
   align-items: center !important;
   justify-content: center;
+  padding:0 0 0 1rem;
+  /* border: 1px solid; */
 }
 
 
@@ -71,8 +73,8 @@
 
 /* Desktop */
 @media only screen and (min-width:1000px){
-  #navbar-box{
-    padding:.8rem 0;
+  #navbar-box-light, #navbar-box-dark{
+    padding:1.2rem 4rem !important;
   }
 
   #apg1-light, #apg1-dark{
@@ -80,8 +82,8 @@
   }
   #apg2-light, #apg2-dark{
     display: block;
-    margin-left:2rem;
     font-size:15px;
+    /* border: 1px solid; */
   }
 
   /* #linksbox1{
@@ -89,10 +91,12 @@
   } */
   #linksbox2{
     display:flex;
+    /* border: 1px solid; */
   }
 
   #navitem{
     display: block;
+    /* border: 1px solid; */
   }
 
 

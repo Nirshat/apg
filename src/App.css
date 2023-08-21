@@ -29,7 +29,8 @@ body{
 .contentBox{
   /* padding:1rem; */
   margin:auto;
-  width:85%;
+  width:88%;
+  /* border: 1px solid; */
 }
 
 .title-light, .title-dark{
