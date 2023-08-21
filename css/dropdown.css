@@ -1,10 +1,10 @@
-#dropdown-light, #dropdown-dark{
+#durapdownu{
   left:1rem;
   border: none;
   /* box-shadow:  3px 3px 5px #ddd,
   -3px -3px 5px #f0f0f0; */
 }
 
-#dropdown-light li a, #dropdown-dark li a{
+#durapdownu li a{
   padding: 1rem;
 }
