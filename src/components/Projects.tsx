@@ -8,9 +8,16 @@ interface Mode{
 const Projects = ({mode}: Mode) => {
   let projArr = [
     {
+      repo: "https://github.com/Nirshat/quo-gen",
+      link: "https://nirshat.github.io/quo-gen/",
+      title: "Random Quotes Generator",
+      prev: "projImages/rqg.png",
+      descr: "Is a website that generates random quotes from api.",
+      techs: ["React", "TypeScript", "Vanilla CSS"],
+    },
+    {
       repo: "https://github.com/Nirshat/BCCATS",
       link: "https://github.com/Nirshat/BCCATS",
-      aos: "zoom-in-right",
       title: "Alumni Tracking (capstone)",
       prev: "projImages/ac-dash.png",
       descr:
@@ -20,31 +27,11 @@ const Projects = ({mode}: Mode) => {
     {
       repo: "https://github.com/Nirshat/BCCATS",
       link: "https://github.com/Nirshat/BCCATS",
-      aos: "zoom-in-right",
       title: "Alumni Website (capstone)",
       prev: "projImages/alumni-website.png",
       descr:
         "Is a portal site for alumni that contains announcement of events and allows the user to update their status info.",
       techs: ["HTML", "CSS", "JS", "PHP", "MySQL"],
-    },
-    {
-      repo: "https://github.com/Nirshat/to-do-list",
-      link: "https://nirshat.github.io/to-do-list/",
-      aos: "zoom-in-right",
-      title: "Simple To-Do List",
-      prev: "projImages/todolist.png",
-      descr: "Is a simple to-do-list app to manage and organize tasks.",
-      techs: ["HTML", "CSS", "JS"],
-    },
-    {
-      repo: "https://github.com/Nirshat/simpleos.github.io",
-      link: "https://nirshat.github.io/simpleos.github.io/index.html",
-      aos: "zoom-in-right",
-      title: "Simple Food Ordering",
-      prev: "projImages/spos.png",
-      descr:
-        "Is a simple food ordering that will automatically compute total amount of order and change.",
-      techs: ["HTML", "CSS", "JS"],
     },
   ];
 
