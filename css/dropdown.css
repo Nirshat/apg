@@ -8,3 +8,7 @@
 #durapdownu li a{
   padding: 1rem;
 }
+
+#active{
+  font-weight: bold;
+}
