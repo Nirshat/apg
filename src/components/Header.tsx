@@ -3,8 +3,6 @@ import { useState, useEffect, useContext } from "react";
 import Contents from "./Contents";
 import Theme from "../context/Theme";
 
-
-
 const Header = () => {
   // Hide navbar/header on Scroll Down
   const [prevScrollPos, setPrevScrollPos] = useState<number>(
@@ -36,74 +34,80 @@ const Header = () => {
     {
       no: 0,
       name: "home",
-      pageId: 'introbox',
+      pageId: "introbox",
     },
     {
       no: 1,
       name: "about",
-      pageId: 'about',
+      pageId: "about",
     },
     {
       no: 2,
       name: "skills",
-      pageId: 'skills',
+      pageId: "skills",
     },
     {
       no: 3,
       name: "experience",
-      pageId:'exp',
+      pageId: "exp",
     },
     {
       no: 4,
       name: "projects",
-      pageId: 'proj',
+      pageId: "proj",
     },
     {
       no: 5,
       name: "contacts",
-      pageId: 'git',
+      pageId: "git",
     },
   ];
 
-
   const [navIndex, setNavIndex] = useState(0);
+  // const [clicked, setClicked] = useState(false);
 
-  const navHandler = (route:number) => {
-    if(route !== navIndex)
-      setNavIndex(route);
-  }
+  const navHandler = (route: number) => {
+    if (route !== navIndex) setNavIndex(route);
+  };
   // if route is not equal to the current value of navIndex, it will be updated
-  // else if it's equal to the current navIndex then nothing happenns 
+  // else if it's equal to the current navIndex then nothing happenns
 
-
-  const {mode, toggleMode} = useContext(Theme);
-
-
+  const { mode, toggleMode } = useContext(Theme);
 
   return (
     <>
       <nav
-        id={mode === "light" ? 'navbar-box-light' : 'navbar-box-dark' }
+        id={mode === "light" ? "navbar-box-light" : "navbar-box-dark"}
         className="navbar bg-body-tertiary px-3 mb-3"
         style={headerStyle}
       >
-
-
         {/* Dropdown -start- */}
         <div
-        className="nav-link dropdown-toggle"
-        id={mode === "light" ? 'apg1-light' : 'apg1-dark' }
-        role="button"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
+          className="nav-link dropdown-toggle"
+          id={mode === "light" ? "apg1-light" : "apg1-dark"}
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
         >
           @aronpaulgonzales
         </div>
 
-        <ul className={mode === "light" ? 'dropdown-menu dropdown-menu-light': 'dropdown-menu dropdown-menu-dark'}  id="durapdownu">
-          {navs.map((item, index) => ( 
+        <ul
+          className={
+            mode === "light"
+              ? "dropdown-menu dropdown-menu-light"
+              : "dropdown-menu dropdown-menu-dark"
+          }
+          id="durapdownu"
+        >
+          {navs.map((item, index) => (
             <li key={index}>
-              <a className="dropdown-item" role='button' onClick={() => navHandler(item.no)}>
+              <a
+                className="dropdown-item"
+                role="button"
+                onClick={() => navHandler(item.no)}
+                id={item.no == navIndex ? "active" : ""}
+              >
                 {item.name}
               </a>
             </li>
@@ -111,20 +115,33 @@ const Header = () => {
         </ul>
         {/* Dropdown -end- */}
 
-
-
         {/* {mode === "light" ? '' : '' } */}
 
         {/* Navbar -start- */}
-        <div id={mode === "light" ? 'apg2-light' : 'apg2-dark' }>@aronpaulgonzales.</div>
+        <div id={mode === "light" ? "apg2-light" : "apg2-dark"}>
+          @aronpaulgonzales.
+        </div>
         <ul className="nav nav-pills" id="linksbox2">
           {navs.map((link, index) => (
-            <li
-              className="nav-item"
-              id="navitem"
-              key={index}
-            >
-              <a className="nav-link" id={mode === "light" ? 'nav-link-light' : 'nav-link-dark' } onClick={() => navHandler(link.no)} role="button">
+            <li className="nav-item" id="navitem" key={index}>
+              <a
+                className="nav-link"
+                id={
+                  // if
+                  mode === "light"
+                    ? link.no == navIndex
+                      ? "nav-link-light-active"
+                      : "nav-link-light"
+
+                  // else (dark)
+                  :
+                    link.no == navIndex
+                    ? "nav-link-dark-active"
+                    : "nav-link-dark"
+                }
+                onClick={() => navHandler(link.no)}
+                role="button"
+              >
                 {link.name}
               </a>
             </li>
@@ -141,7 +158,6 @@ const Header = () => {
         </ul>
         {/* Navbar -end- */}
       </nav>
-
 
       {/* Containing Contents */}
       <Contents contentVal={navIndex} modeVal={mode} />
