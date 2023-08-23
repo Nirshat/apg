@@ -4,19 +4,19 @@
   transition: .3s !important;
 }
 
-body{
-  /* background: #b4daf03d !important; */
-  padding:0;
-  margin:0;
+:root {
+  --background-color: #b4daf03d !important; /* Default light background color */
+  --text-color: black; /* Default light text color */
 }
 
-.main-container-light{
-  background: #b4daf03d;
+body {
+  background-color: var(--background-color) !important;
 }
 
-.main-container-dark{
-  background: #111;
+body.dark-mode {
+  --background-color: #111 !important;
 }
+
 
 .landing{  /* nav landing*/
   padding:4rem 0;

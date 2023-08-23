@@ -71,7 +71,6 @@ const Contents = ({ contentVal, modeVal }: ContentProps) => {
 
   return (
     <>
-    <div className={modeVal === "light" ? 'main-container-light' : 'main-container-dark'}>
       {filteredContents.map((item) => (
         <div className="contentBox" key={item.pageId}>
           <div className="landing">landing</div>
@@ -82,7 +81,6 @@ const Contents = ({ contentVal, modeVal }: ContentProps) => {
         </div>
       ))}
       <Footer mode={modeVal} />
-    </div>
     </>
   );
 };

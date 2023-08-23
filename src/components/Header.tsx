@@ -74,6 +74,11 @@ const Header = () => {
 
   const { mode, toggleMode } = useContext(Theme);
 
+  //  trigger darkmode
+  useEffect(() => {
+    document.body.classList.toggle('dark-mode', mode === 'dark');
+  }, [mode]);
+
   return (
     <>
       <nav
