@@ -1,4 +1,5 @@
 
+
 interface Mode{
   mode: string;
 }
@@ -25,7 +26,7 @@ const Intro = ({mode}: Mode) => {
           {/* <img src="./supporting files/me5.png" alt="" id="intropic" /> */}
         </div>
         <div className="intromsgbox">
-          <div className={mode === "light" ? 'hello-light' : 'hello-dark'}>Hello, I'm Aron Paul.</div>
+          <div className={mode === "light" ? 'hello-light' : 'hello-dark'}>Hello <span className="wave">✋</span>, I'm Aron Paul.</div>
           <div className={mode === "light" ? 'intromsg-light' : 'intromsg-dark'}>
             Providing web solutions for <span id="word1">design</span> and <span id="word2">development</span>.
           </div>
