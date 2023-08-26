@@ -17,9 +17,9 @@
   margin:0 auto 1.5rem;
 }
 
-.intropicbox:hover{
-  transform: rotate(6deg);
-}
+/* .intropicbox:hover{
+  animation: ikot .2s  infinite alternate linear;
+} */
 
 #intropic{
   width:100%;
@@ -41,6 +41,14 @@
 .hello-dark{
   color:#bbb;
 }
+
+.wave{
+  display: inline-block;
+  animation: wave .3s infinite alternate;
+  width:max-content;
+  font-weight: bold;
+}
+
 
 
 .intromsg-light, .intromsg-dark{
@@ -147,9 +155,6 @@
     /* position: relative; */
   }
 
-  .intropicbox:hover{
-    transform: rotate(6deg);
-  }
 
   #intropic{
     width:100%;
@@ -169,5 +174,24 @@
 
   #introFooter{
     justify-content: flex-start;
+  }
+}
+
+
+@keyframes wave {
+  from{
+    transform:rotate(-50deg);
+  }
+  to{
+    transform:rotate(-30deg);
+  }
+}
+
+@keyframes ikot {
+  from{
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(5deg);
   }
 }
