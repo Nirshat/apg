@@ -35,6 +35,11 @@ const Skills = ({mode}: Mode) => {
       // src: "images/typescript.png",
       src: "https://skillicons.dev/icons?i=ts",
     },
+    {
+      tech: "Material UI",
+      // src: "images/typescript.png",
+      src: "https://skillicons.dev/icons?i=mui",
+    },
   ];
 
   let backend = [

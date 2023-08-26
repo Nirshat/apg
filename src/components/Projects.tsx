@@ -8,12 +8,20 @@ interface Mode{
 const Projects = ({mode}: Mode) => {
   let projArr = [
     {
+      repo: "",
+      link: "https://nirshat.github.io/stellarquiz/",
+      title: "StellarQuiz",
+      prev: "projImages/stlrqz.png",
+      descr: "Is a celestial-themed quiz website designed to challenge your knowledge in astronomy.",
+      techs: ["React", "TypeScript", "Vanilla CSS", "Material UI"],
+    },
+    {
       repo: "https://github.com/Nirshat/quo-gen",
       link: "https://nirshat.github.io/quo-gen/",
       title: "Random Quotes Generator",
       prev: "projImages/rqg.png",
-      descr: "Is a website that generates random quotes from api.",
-      techs: ["React", "TypeScript", "Vanilla CSS"],
+      descr: "Is a website that generates random quotes through api calls.",
+      techs: ["React", "TypeScript", "Vanilla CSS", "Quotable api"],
     },
     {
       repo: "https://github.com/Nirshat/BCCATS",
@@ -21,7 +29,7 @@ const Projects = ({mode}: Mode) => {
       title: "Alumni Tracking (capstone)",
       prev: "projImages/ac-dash.png",
       descr:
-        "Is a web application for administrator that organizes alumni data and allows the user to post an announcement of events.",
+        "Is a web app that organizes alumni data and allows the admin to post an announcement of events.",
       techs: ["HTML", "CSS", "JS", "PHP", "MySQL", "Bootstrap"],
     },
     {
@@ -30,7 +38,7 @@ const Projects = ({mode}: Mode) => {
       title: "Alumni Website (capstone)",
       prev: "projImages/alumni-website.png",
       descr:
-        "Is a portal site for alumni that contains announcement of events and allows the user to update their status info.",
+        "Is a portal site that contains announcement of events and allows the alumni to update their status info.",
       techs: ["HTML", "CSS", "JS", "PHP", "MySQL"],
     },
   ];
@@ -43,12 +51,18 @@ const Projects = ({mode}: Mode) => {
           <div className={mode === "light" ? 'card' : 'card text-bg-dark'}  key={index}>
             <img src={val.prev} className="card-img-top" alt="..."/>
             <div className="card-body">
-              <h5 className="card-title"><a id={mode === "light" ? 'linklight' : 'linkdark'} target="_blank" href={val.link}>{val.title}</a></h5>
+              <h5 className="card-title">{val.title}</h5>
               <p className="card-text">{val.descr}</p>
+              <div className="techs">
+                {val.techs.map(tech => ( <div>{tech}</div> ))}
+              </div>
             </div>
 
-            <div className={mode === "light" ? 'card-footer' : 'card-footer text-bg-dark'} >
+            <div className={mode === "light" ? 'card-footer' : 'card-footer text-bg-dark'} id="cadfuta">
               <a target="_blank" href={val.repo} className="btn btn-success">Github <i className="fa-brands fa-github"></i></a>
+              <a target="_blank" href={val.link} className="btn btn-secondary">
+                Demo <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
             </div>
           </div>
         ))}
