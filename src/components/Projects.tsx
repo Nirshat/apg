@@ -8,12 +8,20 @@ interface Mode{
 const Projects = ({mode}: Mode) => {
   let projArr = [
     {
+      repo: "https://github.com/Nirshat/to-do-list",
+      link: "https://nirshat.github.io/to-do-list/",
+      title: "To-Do List",
+      prev: "projImages/todo.png",
+      descr: "Is a simple website designed to help users manage and organize their tasks effectively.",
+      techs: ["React", "TypeScript", "Material UI", "Bootstrap", "CSS"],
+    },
+    {
       repo: "",
       link: "https://nirshat.github.io/stellarquiz/",
       title: "StellarQuiz",
       prev: "projImages/stlrqz.png",
       descr: "Is a celestial-themed quiz website designed to challenge your knowledge in astronomy.",
-      techs: ["React", "TypeScript", "Vanilla CSS", "Material UI"],
+      techs: ["React", "TypeScript", "Material UI",  "CSS"],
     },
     {
       repo: "https://github.com/Nirshat/quo-gen",
@@ -39,7 +47,7 @@ const Projects = ({mode}: Mode) => {
       prev: "projImages/alumni-website.png",
       descr:
         "Is a portal site that contains announcement of events and allows the alumni to update their status info.",
-      techs: ["HTML", "CSS", "JS", "PHP", "MySQL"],
+      techs: ["HTML", "Vanilla CSS", "JS", "PHP", "MySQL"],
     },
   ];
 

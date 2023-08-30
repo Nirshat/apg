@@ -1,25 +1,32 @@
-import { ReactNode, useState } from "react"
-import Theme from "../context/Theme"
-
+import { ReactNode, useState, useEffect } from "react";
+import Theme from "../context/Theme";
 
 interface AppContent {
   children: ReactNode;
 }
 
+const ThemeProvider = ({ children }: AppContent) => {
+  const [mode, setMode] = useState(() => {
+    // Load/Read the theme from localStorage or set default
+    const savedMode = localStorage.getItem("theme");
+    return savedMode || "light";
+    // return current theme or else the default theme
+  });
 
-const ThemeProvider = ({children}: AppContent) => {
-  
-  const [mode, setMode] = useState("light");
+  useEffect(() => {
+    // Save the theme to localStorage whenever it changes
+    localStorage.setItem("theme", mode);
+  }, [mode]);
 
   const toggleMode = () => {
-    setMode(prevMode => prevMode === "light" ? 'dark' : 'light')
-  }
+    setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+  };
 
   return (
-    <Theme.Provider value={{mode, toggleMode}}>
+    <Theme.Provider value={{ mode, toggleMode }}>
       {children}
     </Theme.Provider>
-  )
-}
+  );
+};
 
-export default ThemeProvider
+export default ThemeProvider;
