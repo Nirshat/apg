@@ -8,11 +8,19 @@ interface Mode{
 const Projects = ({mode}: Mode) => {
   let projArr = [
     {
+      repo: "https://github.com/Nirshat/movpichub",
+      link: "https://nirshat.github.io/movpichub/",
+      title: "MovPicHub",
+      prev: "projImages/movpichub.png",
+      descr: "is a minimal website that simply renders posters of movie through api calls based from your search.",
+      techs: ["React", "TypeScript", "Vanilla CSS", "OMDb API"],
+    },
+    {
       repo: "https://github.com/Nirshat/to-do-list",
       link: "https://nirshat.github.io/to-do-list/",
       title: "To-Do List",
       prev: "projImages/todo.png",
-      descr: "Is a simple website designed to help users manage and organize their tasks effectively.",
+      descr: "is a simple website designed to help users manage and organize their tasks effectively.",
       techs: ["React", "TypeScript", "Material UI", "Bootstrap", "CSS"],
     },
     {
@@ -20,7 +28,7 @@ const Projects = ({mode}: Mode) => {
       link: "https://nirshat.github.io/stellarquiz/",
       title: "StellarQuiz",
       prev: "projImages/stlrqz.png",
-      descr: "Is a celestial-themed quiz website designed to challenge your knowledge in astronomy.",
+      descr: "is a celestial-themed quiz website designed to challenge your knowledge in astronomy.",
       techs: ["React", "TypeScript", "Material UI",  "CSS"],
     },
     {
@@ -28,8 +36,8 @@ const Projects = ({mode}: Mode) => {
       link: "https://nirshat.github.io/quo-gen/",
       title: "Random Quotes Generator",
       prev: "projImages/rqg.png",
-      descr: "Is a website that generates random quotes through api calls.",
-      techs: ["React", "TypeScript", "Vanilla CSS", "Quotable api"],
+      descr: "is a website that generates random quotes through api calls.",
+      techs: ["React", "TypeScript", "Vanilla CSS", "quotable api"],
     },
     {
       repo: "https://github.com/Nirshat/BCCATS",
@@ -37,8 +45,8 @@ const Projects = ({mode}: Mode) => {
       title: "Alumni Tracking (capstone)",
       prev: "projImages/ac-dash.png",
       descr:
-        "Is a web app that organizes alumni data and allows the admin to post an announcement of events.",
-      techs: ["HTML", "CSS", "JS", "PHP", "MySQL", "Bootstrap"],
+        "is a web app that organizes alumni data and allows the admin to post an announcement of events.",
+      techs: ["HTML", "CSS", "Javascript", "PHP", "MySQL", "Bootstrap"],
     },
     {
       repo: "https://github.com/Nirshat/BCCATS",
@@ -46,8 +54,8 @@ const Projects = ({mode}: Mode) => {
       title: "Alumni Website (capstone)",
       prev: "projImages/alumni-website.png",
       descr:
-        "Is a portal site that contains announcement of events and allows the alumni to update their status info.",
-      techs: ["HTML", "Vanilla CSS", "JS", "PHP", "MySQL"],
+        "is a portal site that contains announcement of events and allows the alumni to update their status info.",
+      techs: ["HTML", "Vanilla CSS", "Javascript", "PHP", "MySQL"],
     },
   ];
 
