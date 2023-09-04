@@ -8,6 +8,14 @@ interface Mode{
 const Projects = ({mode}: Mode) => {
   let projArr = [
     {
+      repo: "https://github.com/Nirshat/weather-site",
+      link: "https://nirshat.github.io/weather-site/",
+      title: "Weather Site",
+      prev: "projImages/weather-site.png",
+      descr: "is a minimal site that provides weather information of a certain location through api calls. ",
+      techs: ["React", "TypeScript", "Vanilla CSS", "OpenWeather api"],
+    },
+    {
       repo: "https://github.com/Nirshat/movpichub",
       link: "https://nirshat.github.io/movpichub/",
       title: "MovPicHub",
