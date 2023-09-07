@@ -67,10 +67,12 @@ const Header = () => {
   // const [clicked, setClicked] = useState(false);
 
   const navHandler = (route: number) => {
-    if (route !== navIndex) setNavIndex(route);
+    if (route !== navIndex){
+      setNavIndex(route);
+    }
   };
   // if route is not equal to the current value of navIndex, it will be updated
-  // else if it's equal to the current navIndex then nothing happenns
+  // else if it's equal to the current navIndex then nothing happens
 
   const { mode, toggleMode } = useContext(Theme);
 
