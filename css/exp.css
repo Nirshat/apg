@@ -26,6 +26,7 @@
 
 @media only screen and (min-width:1200px){
   .expBox-light, .expBox-dark{
-    width:50%;
+    width:100%;
+    /* border: 1px solid red; */
   }
 }

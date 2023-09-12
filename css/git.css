@@ -24,6 +24,7 @@
 }
 .contactbox-dark{
   background:#222;
+  background: #070733; /* navy blue */
 }
 
 #contactIconBox{
@@ -35,6 +36,7 @@
 
 #contactIconBox img{
   height:2.5rem;
+  border-radius:100px;
 }
 
 #nameandlinkbox{

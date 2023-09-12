@@ -10,9 +10,18 @@
   margin:0;
 }
 
+/* #cardbox-L{
+  background:#fff !important;
+}
+#cardbox-D{
+  background: #070733 !important;
+} */
+
 .card-footer{
   border:none !important;
   background:#fff !important;
+  display: flex;
+  grid-gap:5px;
 }
 
 .techs{
@@ -30,10 +39,12 @@
   text-transform: lowercase;
 }
 
-#cadfuta{
-  display: flex;
-  grid-gap:5px;
+/* #cadfuta-L{
+  background: #fff !important;
 }
+#cadfuta-D{
+  background: #070733 !important;
+} */
 
 
 /* Desktop POV */
@@ -41,7 +52,7 @@
 
   .projList{
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(2, 1fr);
     /* grid-template-rows:none; */
   }
 

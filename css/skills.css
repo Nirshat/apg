@@ -1,6 +1,6 @@
 .tech{
-  display:grid;
-  grid-template-rows:repeat(3, 1fr);
+  display:flex;
+  flex-direction: column;
   /* justify-content: center; */
   grid-gap:4em;
   /* border: 1px solid; */
@@ -14,15 +14,8 @@
   width: auto;
   /* background:#f6fcff; */
   text-align:center;
-  /* padding:1.5rem; */
-  /* background: #e0e0e0; */
-  /* box-shadow:  3px 3px 5px #e0e0e0,
-  -3px -3px 5px #f0f0f0; */
 }
 
-/* .skillbox:hover{
-  background:#add1e61a;
-} */
 
 
 .skillabel-l, .skillabel-d{
@@ -54,11 +47,13 @@
 .icons-holder{
   display:grid;
   grid-template-columns: repeat(4, 1fr);
+  /* display: flex;
+  flex-wrap:wrap; */
   grid-gap:1rem;
 
   justify-content: flex-start;
   /* align-items: flex-start; */
-  /* border:1px solid */
+  /* border:1px solid; */
 }
 
 .iconbox-light, .iconbox-dark{
@@ -66,7 +61,7 @@
   cursor:pointer;
   padding:6px;
   background:#444;
-  border-radius:8px;
+  border-radius:10px;
 }
 
 .iconbox-light{
@@ -74,6 +69,7 @@
 }
 .iconbox-dark{
   background: #222;
+  background: #070733; /* navy blue */
 }
 
 .iconbox-light:hover,.iconbox-dark:hover{
@@ -92,6 +88,7 @@
 #icons > img{
   height:3rem;
   text-align: center;
+  border-radius:10px;
 }
 
 
@@ -125,10 +122,16 @@
   .tech{
       display:grid;
       grid-template-columns:repeat(3, 1fr);
-      grid-gap:6rem;
-      /* width:75%; */
+      /* display: flex; */
+      /* justify-content: center; */
+      grid-gap:3rem;
       /* flex-wrap: wrap; */
       /* grid-gap:30px; */
       /* border:1px solid; */
+  }
+
+  .icons-holder{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
