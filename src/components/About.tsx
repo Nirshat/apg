@@ -9,7 +9,7 @@ const About = ({mode}: Mode) => {
       <div className="aboutflex">
         <div id="mebox">
           <h5 id={mode === "light" ? 'wi32do-lioght' : 'wi32do-dark'}>what i love to do?</h5>
-          <p className={mode === "light" ? 'p-light' : 'p-dark'}> I'm a ambitious web developer and i wanted to share that before, I was interested in computer hardware and troubleshooting, leading me to pursue the BSIT course. However, my interests took a significant turn when we began our web development lessons. I discovered a newfound passion for creating websites, and since then, I have gained over three years of valuable hands-on experience in web development.
+          <p className={mode === "light" ? 'p-light' : 'p-dark'}> I'm a ambitious web developer and i wanted to share that before, I was interested in computer hardware and troubleshooting, leading me to pursue the BSIT course. However, my interests took a significant turn when we began our web development lessons. I discovered a newfound passion and since then, I have gained three years of valuable experience in web development.
           </p>
 
           <br />

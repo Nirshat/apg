@@ -22,31 +22,25 @@ const Intro = ({mode}: Mode) => {
     <>
       <div className="intro">
         <div className="intropicbox">
-          <img src="./supporting files/digme5.png" alt="" id="intropic" />
+          <img src="./supporting files/me4.jpg" alt="" id="intropic" />
           {/* <img src="./supporting files/me5.png" alt="" id="intropic" /> */}
         </div>
+
+
         <div className="intromsgbox">
           <div className={mode === "light" ? 'hello-light' : 'hello-dark'}>Hello <span className="wave">✋</span>, I'm Aron Paul.</div>
           <div className={mode === "light" ? 'intromsg-light' : 'intromsg-dark'}>
-            Providing web solutions for <span id="word1">design</span> and <span id="word2">development</span>.
+            Providing <span id="word1">front-end</span> web solutions.
           </div>
 
           <div id="introFooter">
-            <div>
-              <a target="_blank" href="https://linkedin.com/in/apg-1101yj">
-                <button className="buttons">
-                  Let's Socialize!
-                  {/* <i id="projIcon" className="fa-solid fa-diagram-project"></i> */}
-                  <i id="projIcon" className="fa-solid fa-thumbs-up"></i>
-                </button>
-              </a>
-            </div>
-            {/* <div className="introIcons">
-              <a target="_blank" href="mailto:aronpaulgonzales1215@gmail.com"><img src="./rsrc-dev/green/gmail.png" alt="" /></a>
-              <a target="_blank" href="https://web.facebook.com/Namikaze1000"><img src="./rsrc-dev/green/fb.png" alt="" /></a>
-              <a target="_blank" href="https://github.com/Nirshat"><img src="./rsrc-dev/green/github.png" alt="" /></a>
-              <a target="_blank" href="https://linkedin.com/in/apg-1101yj"><img src="./rsrc-dev/green/linkedin.png" alt="" /></a>
-            </div> */}
+            <a target="_blank" href="https://linkedin.com/in/apg-1101yj">
+              <button className="buttons">
+                Let's Socialize!
+                {/* <i id="projIcon" className="fa-solid fa-diagram-project"></i> */}
+                <i id="projIcon" className="fa-solid fa-thumbs-up"></i>
+              </button>
+            </a>
           </div>
         </div>
       </div>

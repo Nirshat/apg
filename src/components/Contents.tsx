@@ -12,18 +12,9 @@ interface ContentProps {
 }
 
 
-// This serves as a blueprint or contract that specifies what properties an object of this type should have.
-// Para ma-access yung bawat attributes sa loob ng objects na parang normal array lang.
-interface ContentItem {
-  title: string;
-  descript: string;
-  value: JSX.Element; // JSX type
-  pageId: number;
-}
-
 
 const Contents = ({ contentVal, modeVal }: ContentProps) => {
-  const contents: ContentItem[] = [
+  const contents = [
     {
       title: "",
       descript: "",

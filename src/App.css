@@ -15,11 +15,12 @@ body {
 
 body.dark-mode {
   --background-color: #111 !important;
+  --background-color: #05051e !important;
 }
 
 
 .landing{  /* nav landing*/
-  padding:4rem 0;
+  padding:3rem 0;
   color: #ffffff00;
   /* color: #000000;
   border: 1px solid; */
@@ -78,18 +79,26 @@ body.dark-mode {
     width: 90%;
   }
 
+  .landing{  /* nav landing*/
+    padding:8rem 0;
+  }
+
 }
 
 
 
 /* Desktop POV */
 @media only screen and (min-width:1000px){
-  /* .contentBox{
-    margin:10rem auto;
-  } */
 
   .landing{  /* nav landing*/
-    padding:4rem 0;
+    padding:2rem 0;
+  }
+
+
+  .contentBox{
+    /* margin:10rem auto; */
+    width:70%;
+    /* border:1px solid; */
   }
 
   .title{
