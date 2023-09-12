@@ -20,7 +20,7 @@ body.dark-mode {
 
 
 .landing{  /* nav landing*/
-  padding:3rem 0;
+  padding:2rem 0;
   color: #ffffff00;
   /* color: #000000;
   border: 1px solid; */
@@ -80,7 +80,7 @@ body.dark-mode {
   }
 
   .landing{  /* nav landing*/
-    padding:8rem 0;
+    padding:5rem 0;
   }
 
 }
