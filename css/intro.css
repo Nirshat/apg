@@ -5,6 +5,7 @@
 .intro{
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   /* border: 1px solid; */
 }
 
@@ -17,7 +18,7 @@
 #intropic{
   height:10rem;
   width:10rem;
-  border-radius:100%;
+  border-radius:20%;
 }
 
 
@@ -118,7 +119,7 @@
 @media only screen and (min-width:1200px){
   .intro{
     flex-direction: row;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     grid-gap:2rem;
     align-items:center;
     justify-content: center;
@@ -133,8 +134,8 @@
 
 
   #intropic{
-    height:16rem;
-    width:16rem;
+    height:20rem;
+    width:20rem;
   }
 
   .hello-light, .hello-dark{
@@ -142,7 +143,7 @@
   }
 
   .intromsg-light, .intromsg-dark{
-    text-align:justify;
+    text-align:start;
     font-size:4em;
   }
 
