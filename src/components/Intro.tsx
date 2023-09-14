@@ -22,7 +22,7 @@ const Intro = ({mode}: Mode) => {
     <>
       <div className="intro">
         <div className="intropicbox">
-          <img src="./supporting files/me4.jpg" alt="" id="intropic" />
+          <img src="./supporting files/digmepng.png" alt="" id="intropic" />
           {/* <img src="./supporting files/me5.png" alt="" id="intropic" /> */}
         </div>
 

@@ -5,6 +5,24 @@ const useProjectsStore = create(() => (
   {
     projArr: [
       {
+        repo: "https://github.com/Nirshat/coffeehub",
+        link: "https://nirshat.github.io/coffeehub/",
+        title: "CoffeeHub",
+        prev: "projImages/coffeehub.png",
+        descr:
+          "is a minimal mock-up website design to showcase my front-end skills.",
+        techs: ["React", "TypeScript", "SCSS"],
+      },
+      {
+        repo: "https://github.com/Nirshat/to-do-list",
+        link: "https://nirshat.github.io/to-do-list/",
+        title: "To-Do List",
+        prev: "projImages/todo.png",
+        descr:
+          "is a simple website designed to help users manage and organize their tasks effectively.",
+        techs: ["React", "TypeScript", "Material UI", "Bootstrap", "CSS"],
+      },
+      {
         repo: "",
         link: "",
         title: "Alumni Tracking (capstone)",
@@ -21,15 +39,6 @@ const useProjectsStore = create(() => (
         descr:
           "is a portal site that contains announcement of events and allows the alumni to update their status info.",
         techs: ["HTML", "Vanilla CSS", "Javascript", "PHP", "MySQL"],
-      },
-      {
-        repo: "https://github.com/Nirshat/to-do-list",
-        link: "https://nirshat.github.io/to-do-list/",
-        title: "To-Do List",
-        prev: "projImages/todo.png",
-        descr:
-          "is a simple website designed to help users manage and organize their tasks effectively.",
-        techs: ["React", "TypeScript", "Material UI", "Bootstrap", "CSS"],
       },
       {
         repo: "https://github.com/Nirshat/movpichub",
