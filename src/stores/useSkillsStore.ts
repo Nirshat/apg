@@ -30,8 +30,8 @@ const useSkillsStore = create(() => (
         src: "https://skillicons.dev/icons?i=ts",
       },
       {
-        tech: "Zustand",
-        src: "images/zustand2.png",
+        tech: "SCSS",
+        src: "https://skillicons.dev/icons?i=scss",
       },
       {
         tech: "Bootstrap",
