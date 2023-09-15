@@ -13,7 +13,7 @@ interface ContentProps {
 
 
 
-const Contents = ({ contentVal, modeVal }: ContentProps) => {
+const Contents = ({modeVal }: ContentProps) => {
   const contents = [
     {
       title: "",
