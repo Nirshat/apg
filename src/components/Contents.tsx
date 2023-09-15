@@ -20,58 +20,66 @@ const Contents = ({ contentVal, modeVal }: ContentProps) => {
       descript: "",
       value: <Intro mode={modeVal} />,
       pageId: 0,
+      hrefno:"0",
     },
     {
       title: "About.",
-      descript: "Personal",
+      descript: "",
       value: <About mode={modeVal} />,
       pageId: 1,
+      hrefno:"1",
     },
     {
       title: "Skills.",
-      descript: "What i can provide?",
+      descript: "Technologies and Tools",
       value: <Skills mode={modeVal} />,
       pageId: 2,
+      hrefno:"2",
     },
     {
       title: "Experience.",
-      descript: "What experiences have I undergone?",
+      descript: "experiences have I undergone.",
       value: <Exp mode={modeVal} />,
       pageId: 3,
+      hrefno: "3",
     },
     {
       title: "Projects.",
-      descript: "What projects i have done?",
+      descript: "projects i have done.",
       value: <Projects mode={modeVal} />,
       pageId: 4,
+      hrefno: "4",
     },
     {
       title: "Contacts.",
-      descript: "",
+      descript: "Social Media Links",
       value: <GetInTouch mode={modeVal} />,
       pageId: 5,
+      hrefno: "5",
     },
   ];
 
 
-  const filteredContents = contents.filter(
-    (item) => item.pageId === contentVal
-  );
+  // const filteredContents = contents.filter(
+  //   (item) => item.pageId === contentVal
+  // );
 
 
 
   return (
     <>
-      {filteredContents.map((item) => (
-        <div className="contentBox" key={item.pageId}>
-          <div className="landing">landing</div>
-          <div className={modeVal === "light" ? 'title-light' : 'title-dark'}> {item.title} </div>
-          <div className={modeVal === "light" ? 'descript-light' : 'descript-dark'}> {item.descript} </div>
-          <div className="content"> {item.value} </div>
-          <div className="landing"></div>
-        </div>
-      ))}
-      <Footer mode={modeVal} />
+      <div className="main-app-box">
+        {contents.map((item) => (
+          <div className="contentBox" key={item.pageId}>
+            <div className="landing" id={item.hrefno}></div>
+            {/* <div className={modeVal === "light" ? 'title-light' : 'title-dark'}> {item.title} </div> */}
+            <div className={modeVal === "light" ? 'descript-light' : 'descript-dark'}>{item.descript} </div>
+            <div className="content"> {item.value} </div>
+            <div className="landing"></div>
+          </div>
+        ))}
+        <Footer mode={modeVal} />
+      </div>
     </>
   );
 };

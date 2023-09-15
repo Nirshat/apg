@@ -22,7 +22,7 @@ const Intro = ({mode}: Mode) => {
     <>
       <div className="intro">
         <div className="intropicbox">
-          <img src="./supporting files/digmepng.png" alt="" id="intropic" />
+          <img src="./supporting files/coding.png" alt="" id="intropic" />
           {/* <img src="./supporting files/me5.png" alt="" id="intropic" /> */}
         </div>
 
@@ -34,13 +34,15 @@ const Intro = ({mode}: Mode) => {
           </div>
 
           <div id="introFooter">
-            <a target="_blank" href="https://linkedin.com/in/apg-1101yj">
+            {/* <a target="_blank" href="https://linkedin.com/in/apg-1101yj">
               <button className="buttons">
                 Let's Socialize!
-                {/* <i id="projIcon" className="fa-solid fa-diagram-project"></i> */}
                 <i id="projIcon" className="fa-solid fa-thumbs-up"></i>
               </button>
-            </a>
+            </a> */}
+            <p className={mode === "light" ? 'plight' : 'pdark'}>
+              I'm a Front-end Developer based in Philippines.
+            </p>
           </div>
         </div>
       </div>

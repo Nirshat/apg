@@ -8,7 +8,12 @@ interface Mode{
 const Footer = ({mode}: Mode) => {
   return (
     <div className={mode === "light" ? 'footerBox-light' : 'footerBox-dark'}>
-      Designed & Built by Aron Paul Gonzales <BsFillSuitHeartFill color="#0fa50f" />
+      <div>
+        Made with <BsFillSuitHeartFill color="#0fa50f" /> by Aron Paul Gonzales.All rights reserved
+      </div>
+      <span className="techs">
+        React | TypeScript | Zustand | Bootstrap
+      </span>
     </div>
   )
 }

@@ -4,8 +4,14 @@
 
 .intro{
   display: flex;
+  align-items:center;
+  justify-content: center;
   flex-direction: column;
+  flex-direction: column-reverse;
   box-sizing: border-box;
+  grid-gap:3.5rem;
+  margin-top:0;
+  height:100vh; /* 100% height of the viewport
   /* border: 1px solid; */
 }
 
@@ -16,8 +22,8 @@
 
 
 #intropic{
-  height:10rem;
-  width:10rem;
+  height:16rem;
+  width:16rem;
   border-radius:20%;
 }
 
@@ -33,7 +39,7 @@
   font-family: Fira Code;
   /* font-weight: bold; */
   margin-bottom:.5rem;
-  text-align: center;
+  /* text-align: center; */
   color:#444;
 }
 
@@ -59,7 +65,7 @@
   text-shadow: 2px 4px 3px rgba(0,0,0,.1);
   /* border: 1px solid; */
   width:auto;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .intromsg-light{
@@ -78,11 +84,22 @@
 
 
 #introFooter{
-  margin-top:1.8rem;
-  text-align: center;
+  margin-top:1rem;
+  /* text-align: center; */
   /* border: 1px solid; */
 }
 
+.plight{
+  margin:0;
+  color:#444;
+  /* border:1px solid; */
+}
+
+.pdark{
+  margin:0;
+  color:#aaa;
+  /* border:1px solid; */
+}
 
 #projIcon{
   margin-left:.5rem;
@@ -104,14 +121,28 @@
 @media only screen and (min-width:700px){
   
   .hello-light, .hello-dark{
-    font-size:23px;
+    font-size:19px;
+    text-align: center;
   }
 
   .intromsg-light, .intromsg-dark{
-    font-size:3.5em;
+    font-size:3em;
     line-height:4.5rem;
     letter-spacing:2px;
+    text-align: center;
   }
+
+
+  #intropic{
+    height:18rem;
+    width:18rem;
+  }
+
+
+  #introFooter{
+    text-align: center;
+  }
+  
 
 }
 
@@ -119,11 +150,11 @@
 @media only screen and (min-width:1200px){
   .intro{
     flex-direction: row;
-    /* flex-direction: row-reverse; */
+    flex-direction: row-reverse;
     grid-gap:2rem;
     align-items:center;
     justify-content: center;
-    margin:auto;
+    /* margin:24vh auto 0; */
   }
 
   .intromsgbox{
@@ -134,17 +165,18 @@
 
 
   #intropic{
-    height:20rem;
-    width:20rem;
+    height:22rem;
+    width:22rem;
   }
 
   .hello-light, .hello-dark{
     text-align:start;
+    font-size:18px;
   }
 
   .intromsg-light, .intromsg-dark{
     text-align:start;
-    font-size:4em;
+    font-size:3.5em;
   }
 
   #introFooter{

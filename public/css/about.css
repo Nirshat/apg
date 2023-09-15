@@ -34,7 +34,7 @@
 
 
 #wi32do-light, #wi32do-dark{
-  text-shadow: 2px 4px 3px rgba(0,0,0,.1);
+  font-size:18px;
 }
 
 #wi32do-light{
@@ -46,7 +46,7 @@
 
 .p-light, .p-dark{
   line-height: 1.8em;
-  margin: 0;
+  /* margin: 0; */
   color:#444;
   text-align: justify;
 }
@@ -94,30 +94,33 @@
 
   .aboutflex{
     display: flex !important;
+    flex-direction: row-reverse;
+    grid-gap:1.5rem;
+    align-items: center;
   }
 
-  .picbox {
+  /* .picbox {
     display: grid;
     grid-template-columns:1fr 1fr;
     margin:0 0 0 2.5rem;
     grid-gap:.5rem;
-  }
+  } */
 
   #me{
     height:auto;
     display: block;
-    max-height:10em;
+    height:22em;
     border-radius:.9em;
-    transform: rotate(3deg);
+    /* transform: rotate(3deg); */
     transition: .3s;
-    opacity:.7;
+    /* opacity:.7; */
   }
   
-  #me:hover{
+  /* #me:hover{
     transform:scale(1.6);
     z-index:5;
     opacity:1;
-  }
+  } */
 
 }
 

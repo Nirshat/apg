@@ -9,65 +9,62 @@ const Header = () => {
 
 
   // Hide navbar/header on Scroll Down
-  // const [prevScrollPos, setPrevScrollPos] = useState<number>(
-  //   window.scrollY || 0
-  // );
-  // const [visible, setVisible] = useState<boolean>(true);
+  const [prevScrollPos, setPrevScrollPos] = useState<number>(
+    window.scrollY || 0
+  );
+  const [visible, setVisible] = useState<boolean>(true);
 
-  // const handleScroll = () => {
-  //   const currentScrollPos = window.scrollY || 0;
-  //   const isScrolledUp = prevScrollPos > currentScrollPos;
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY || 0;
+    const isScrolledUp = prevScrollPos > currentScrollPos;
 
-  //   setVisible(isScrolledUp);
-  //   setPrevScrollPos(currentScrollPos);
-  // };
+    setVisible(isScrolledUp);
+    setPrevScrollPos(currentScrollPos);
+  };
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, [prevScrollPos]);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
 
-  // const headerStyle = {
-  //   transform: visible ? "translateY(0)" : "translateY(-100%)",
-  //   transition: "transform 0.1s ease-in-out",
-  // };
+  const headerStyle = {
+    transform: visible ? "translateY(0)" : "translateY(-100%)",
+    transition: "transform 0.1s ease-in-out",
+  };
 
   
-
-
-
   let navs = [
     {
       no: 0,
       name: "home",
-      pageId: "introbox",
+      pageId: "0",
     },
     {
       no: 1,
       name: "about",
-      pageId: "about",
+      pageId: "1",
     },
     {
       no: 2,
       name: "skills",
-      pageId: "skills",
+      pageId: "2",
     },
     {
       no: 3,
       name: "experience",
-      pageId: "exp",
+      pageId: "3",
     },
     {
       no: 4,
       name: "projects",
-      pageId: "proj",
+      pageId: "4",
     },
     {
       no: 5,
       name: "contacts",
-      pageId: "git",
+      pageId: "5",
     },
   ];
 
@@ -94,7 +91,7 @@ const Header = () => {
       <nav
         id={mode === "light" ? "navbar-box-light" : "navbar-box-dark"}
         className="navbar bg-body-tertiary px-3 mb-3"
-        // style={headerStyle}
+        style={headerStyle}
       >
         {/* Dropdown -start- */}
         <div
@@ -120,6 +117,7 @@ const Header = () => {
           {navs.map((item, index) => (
             <li key={index}>
               <a
+                href={"#"+item.pageId}
                 className="dropdown-item"
                 role="button"
                 onClick={() => navHandler(item.no)}
@@ -140,6 +138,7 @@ const Header = () => {
           {navs.map((link, index) => (
             <li className="nav-item" id="navitem" key={index}>
               <a
+                href={"#"+link.pageId}
                 className="nav-link"
                 id={
                   // if
