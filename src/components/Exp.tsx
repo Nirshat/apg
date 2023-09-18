@@ -1,9 +1,10 @@
+import {useContext} from 'react'
+import Theme from "../context/Theme";
 
-interface Mode{
-  mode:string;
-}
 
-const Exp = ({mode}: Mode) => {
+const Exp = () => {
+  const {mode} = useContext(Theme);
+  
   return (
     <>
       <div className={mode === "light" ? 'expBox-light' : 'expBox-dark'}>

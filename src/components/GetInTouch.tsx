@@ -1,11 +1,11 @@
 import useContactsStore from "../stores/useContactsStore";
+import {useContext} from 'react'
+import Theme from "../context/Theme";
 
-interface Mode{
-  mode:string;
-}
 
-const GetInTouch = ({mode}: Mode) => {
+const GetInTouch = () => {
   let {contactProps} = useContactsStore();
+  const {mode} = useContext(Theme);
 
   return (
     <>

@@ -1,16 +1,40 @@
 
 import { create } from "zustand"
 
-const useProjectsStore = create(() => (
+type State = {
+  projectKey: number
+  projArr: {
+    repo: string
+    link: string
+    title: string
+    prev: string
+    descr: string
+    techs: string[]
+  }[]
+}
+
+type Action = {
+  getProject: (no:number) => void
+}
+
+const useProjectsStore = create<State & Action>((set) => (
   {
     projArr: [
+      {
+        repo: "https://github.com/Nirshat/phvistaquest",
+        link: "https://nirshat.github.io/phvistaquest/",
+        title: "PH Vista Quest",
+        prev: "projImages/phquest.png",
+        descr: "a simple landing page with banners of some beautiful places in philippines.",
+        techs: ["React", "TypeScript", "SCSS"],
+      },
       {
         repo: "https://github.com/Nirshat/coffeehub",
         link: "https://nirshat.github.io/coffeehub/",
         title: "CoffeeHub",
         prev: "projImages/coffeehub.png",
         descr:
-          "is a minimal mock-up website design to showcase my front-end skills.",
+          "is a minimal landing page just to showcase my front-end skills.",
         techs: ["React", "TypeScript", "SCSS"],
       },
       {
@@ -67,7 +91,20 @@ const useProjectsStore = create(() => (
         techs: ["React", "TypeScript", "Vanilla CSS", "quotable api"],
       },
     ],
+
+    projectKey: 0,
+    getProject: (no) => set((state) => ({...state, projectKey: no}))
   }
 ));
 
 export default useProjectsStore
+
+
+// {
+//   repo: "https://github.com/Nirshat/weather-site",
+//   link: "https://nirshat.github.io/weather-site/",
+//   title: "Weather Site",
+//   prev: "projImages/weather-site.png",
+//   descr: "is a minimal site that provides weather information of a certain location through api calls. ",
+//   techs: ["React", "TypeScript", "Vanilla CSS", "OpenWeather api"],
+// },

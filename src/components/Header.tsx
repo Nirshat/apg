@@ -46,16 +46,16 @@ const Header = () => {
       name: "about",
       pageId: "1",
     },
-    {
-      no: 2,
-      name: "skills",
-      pageId: "2",
-    },
-    {
-      no: 3,
-      name: "experience",
-      pageId: "3",
-    },
+    // {
+    //   no: 2,
+    //   name: "skills",
+    //   pageId: "2",
+    // },
+    // {
+    //   no: 3,
+    //   name: "experience",
+    //   pageId: "3",
+    // },
     {
       no: 4,
       name: "projects",
@@ -161,15 +161,16 @@ const Header = () => {
             </li>
           ))}
 
-          <li id="special-nav" className="nav-item">
-            <label className="ui-switch">
-              <input type="checkbox" onChange={toggleMode} />
-              <div className="slider">
-                <div className="circle"></div>
-              </div>
-            </label>
-          </li>
+          {/* <li id="special-nav" className="nav-item">
+          </li> */}
         </ul>
+
+        <label className="ui-switch">
+          <input type="checkbox" onChange={toggleMode} />
+          <div className="slider">
+            <div className="circle"></div>
+          </div>
+        </label>
         {/* Navbar -end- */}
       </nav>
 

@@ -1,10 +1,9 @@
 
+import {useContext} from 'react'
+import Theme from "../context/Theme";
 
-interface Mode{
-  mode: string;
-}
 
-const Intro = ({mode}: Mode) => {
+const Intro = () => {
   // let msg = [
   //   'My expertise lies in the realm of web design and development.',
   //   'My expertise lies in designing and developing web-related projects.',
@@ -17,6 +16,8 @@ const Intro = ({mode}: Mode) => {
   //   'The core of my work revolves around designing and developing web-based applicationsx.',
   //   'I specialize in the creation and implementation of web-centric solutions.',
   // ];
+
+  const {mode} = useContext(Theme);
 
   return (
     <>

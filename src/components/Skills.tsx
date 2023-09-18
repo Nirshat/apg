@@ -1,10 +1,12 @@
 import useSkillsStore from "../stores/useSkillsStore";
+import {useContext} from 'react'
+import Theme from "../context/Theme";
 
-interface Mode{
-  mode:string;
-}
 
-const Skills = ({mode}: Mode) => {
+
+const Skills = () => {
+  // from context
+  const {mode} = useContext(Theme);
 
   // from zustand store
   let {frontend} = useSkillsStore();
