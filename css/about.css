@@ -34,7 +34,8 @@
 
 
 #wi32do-light, #wi32do-dark{
-  font-size:18px;
+  font-size:17px;
+  text-transform:uppercase;
 }
 
 #wi32do-light{
