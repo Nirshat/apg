@@ -21,11 +21,19 @@ const useProjectsStore = create<State & Action>((set) => (
   {
     projArr: [
       {
+        repo: "https://github.com/Nirshat/expense-tracker",
+        link: "https://nirshat.github.io/expense-tracker/",
+        title: "Expense Tracker",
+        prev: "projImages/expense.png",
+        descr: "is a minimal app that helps you to track your expenses.",
+        techs: ["React", "TypeScript", "Tailwind", "Zustand"],
+      },
+      {
         repo: "https://github.com/Nirshat/phvistaquest",
         link: "https://nirshat.github.io/phvistaquest/",
         title: "PH Vista Quest",
         prev: "projImages/phquest.png",
-        descr: "a simple landing page with banners of some beautiful places in philippines.",
+        descr: "is a simple landing page with banners of some beautiful places in philippines.",
         techs: ["React", "TypeScript", "SCSS"],
       },
       {
@@ -43,7 +51,7 @@ const useProjectsStore = create<State & Action>((set) => (
         title: "To-Do List",
         prev: "projImages/todo.png",
         descr:
-          "is a simple website designed to help users manage and organize their tasks effectively.",
+          "is a minimal app designed to help users manage and organize their tasks effectively.",
         techs: ["React", "TypeScript", "Material UI", "Bootstrap", "CSS"],
       },
       {
@@ -79,7 +87,7 @@ const useProjectsStore = create<State & Action>((set) => (
         title: "StellarQuiz",
         prev: "projImages/stlrqz.png",
         descr:
-          "is a celestial-themed quiz website designed to challenge your knowledge in astronomy.",
+          "is a celestial-themed quiz app designed to challenge your knowledge in astronomy.",
         techs: ["React", "TypeScript", "Material UI", "CSS"],
       },
       {
@@ -87,7 +95,7 @@ const useProjectsStore = create<State & Action>((set) => (
         link: "https://nirshat.github.io/quo-gen/",
         title: "Random Quotes Generator",
         prev: "projImages/rqg.png",
-        descr: "is a website that generates random quotes through api calls.",
+        descr: "is a minimal app that generates random quotes through api calls.",
         techs: ["React", "TypeScript", "Vanilla CSS", "quotable api"],
       },
     ],
