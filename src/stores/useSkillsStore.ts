@@ -87,22 +87,13 @@ const useSkillsStore = create(() => (
 
     others: [
       {
-        tech: "XAMPP",
-        src: "images/xampp.png",
-      },
-      {
-        tech: "Canva",
-        src: "images/canva.jpg",
-      },
-      {
         tech: "Vite.js",
         // src: "images/vite.png",
         src: "https://skillicons.dev/icons?i=vite",
       },
       {
-        tech: "GitHub",
-        // src: "images/github.png",
-        src: "https://skillicons.dev/icons?i=github",
+        tech: "Postman",
+        src: "https://skillicons.dev/icons?i=postman",
       },
       {
         tech: "Git",
@@ -110,8 +101,17 @@ const useSkillsStore = create(() => (
         src: "https://skillicons.dev/icons?i=git",
       },
       {
-        tech: "Postman",
-        src: "https://skillicons.dev/icons?i=postman",
+        tech: "GitHub",
+        // src: "images/github.png",
+        src: "https://skillicons.dev/icons?i=github",
+      },
+      {
+        tech: "XAMPP",
+        src: "images/xampp.png",
+      },
+      {
+        tech: "Canva",
+        src: "images/canva.jpg",
       },
     ],
   }

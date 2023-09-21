@@ -42,7 +42,7 @@ const Intro = () => {
               </button>
             </a> */}
             <p className={mode === "light" ? 'plight' : 'pdark'}>
-              I'm a Front-end Developer based in Philippines.
+              I'm a React JS Developer based in Philippines.
             </p>
           </div>
         </div>

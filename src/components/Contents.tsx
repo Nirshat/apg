@@ -38,7 +38,7 @@ const Contents = ({modeVal }: ContentProps) => {
     },
     {
       title: "Experience.",
-      descript: "experiences have I undergone.",
+      descript: "experiences i have undergone.",
       value: <Exp />,
       pageId: 3,
       hrefno: "3",
