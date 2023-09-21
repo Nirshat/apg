@@ -29,7 +29,7 @@ const Intro = () => {
 
 
         <div className="intromsgbox">
-          <div className={mode === "light" ? 'hello-light' : 'hello-dark'}>Hello <span className="wave">✋</span>, I'm Aron Paul.</div>
+          <div className={mode === "light" ? 'hello-light' : 'hello-dark'}>Hello, I'm Aron Paul <span className="wave">✋</span></div>
           <div className={mode === "light" ? 'intromsg-light' : 'intromsg-dark'}>
             Providing <span id="word1">front-end</span> web solutions.
           </div>
