@@ -29,12 +29,13 @@ const useProjectsStore = create<State & Action>((set) => (
         techs: ["React", "TypeScript", "Tailwind", "Zustand"],
       },
       {
-        repo: "https://github.com/Nirshat/phvistaquest",
-        link: "https://nirshat.github.io/phvistaquest/",
-        title: "PH Vista Quest",
-        prev: "projImages/phquest.png",
-        descr: "is a simple landing page with banners of some beautiful places in philippines.",
-        techs: ["React", "TypeScript", "SCSS"],
+        repo: "https://github.com/Nirshat/to-do-list",
+        link: "https://nirshat.github.io/to-do-list/",
+        title: "To-Do List",
+        prev: "projImages/todo.png",
+        descr:
+          "is a minimal app designed to help users manage and organize their tasks effectively.",
+        techs: ["React", "TypeScript", "Material UI", "Bootstrap", "CSS"],
       },
       {
         repo: "https://github.com/Nirshat/coffeehub",
@@ -46,13 +47,21 @@ const useProjectsStore = create<State & Action>((set) => (
         techs: ["React", "TypeScript", "SCSS"],
       },
       {
-        repo: "https://github.com/Nirshat/to-do-list",
-        link: "https://nirshat.github.io/to-do-list/",
-        title: "To-Do List",
-        prev: "projImages/todo.png",
+        repo: "https://github.com/Nirshat/movpichub",
+        link: "https://nirshat.github.io/movpichub/",
+        title: "MovPicHub",
+        prev: "projImages/movpichub.png",
         descr:
-          "is a minimal app designed to help users manage and organize their tasks effectively.",
-        techs: ["React", "TypeScript", "Material UI", "Bootstrap", "CSS"],
+          "is a minimal website that simply renders posters of movie through api calls based from your search.",
+        techs: ["React", "TypeScript", "Vanilla CSS", "OMDb API"],
+      },
+      {
+        repo: "https://github.com/Nirshat/phvistaquest",
+        link: "https://nirshat.github.io/phvistaquest/",
+        title: "PH Vista Quest",
+        prev: "projImages/phquest.png",
+        descr: "is a simple landing page with banners of some beautiful places in philippines.",
+        techs: ["React", "TypeScript", "SCSS"],
       },
       {
         repo: "",
@@ -73,21 +82,12 @@ const useProjectsStore = create<State & Action>((set) => (
         techs: ["HTML", "Vanilla CSS", "Javascript", "PHP", "MySQL"],
       },
       {
-        repo: "https://github.com/Nirshat/movpichub",
-        link: "https://nirshat.github.io/movpichub/",
-        title: "MovPicHub",
-        prev: "projImages/movpichub.png",
-        descr:
-          "is a minimal website that simply renders posters of movie through api calls based from your search.",
-        techs: ["React", "TypeScript", "Vanilla CSS", "OMDb API"],
-      },
-      {
         repo: "",
         link: "https://nirshat.github.io/stellarquiz/",
         title: "StellarQuiz",
         prev: "projImages/stlrqz.png",
         descr:
-          "is a celestial-themed quiz app designed to challenge your knowledge in astronomy.",
+          "is a celestial-themed quiz site designed to challenge your knowledge in astronomy.",
         techs: ["React", "TypeScript", "Material UI", "CSS"],
       },
       {
@@ -95,7 +95,7 @@ const useProjectsStore = create<State & Action>((set) => (
         link: "https://nirshat.github.io/quo-gen/",
         title: "Random Quotes Generator",
         prev: "projImages/rqg.png",
-        descr: "is a minimal app that generates random quotes through api calls.",
+        descr: "is a minimal site that generates random quotes through api calls.",
         techs: ["React", "TypeScript", "Vanilla CSS", "quotable api"],
       },
     ],
