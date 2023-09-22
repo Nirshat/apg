@@ -23,6 +23,12 @@ const useContactsStore = create(() => (
         prelink: "/in/apg-1101yj",
       },
       {
+        imgsrc: "images/github1.png",
+        name: "GitHub",
+        link: "https://github.com/Nirshat",
+        prelink: "/Nirshat",
+      },
+      {
         imgsrc: "images/insta.png",
         name: "Instagram",
         link: "https://www.instagram.com/apgdomain/",
@@ -33,12 +39,6 @@ const useContactsStore = create(() => (
         name: "Twitter",
         link: "https://twitter.com/codeyron",
         prelink: "@codeyron",
-      },
-      {
-        imgsrc: "images/github1.png",
-        name: "GitHub",
-        link: "https://github.com/Nirshat",
-        prelink: "/Nirshat",
       },
     ],
   }

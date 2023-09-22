@@ -12,7 +12,7 @@ const Footer = ({mode}: Mode) => {
         Made with 💚 by Aron Paul Gonzales.All rights reserved
       </div>
       <span className="techs">
-        React | TypeScript | Zustand | Bootstrap 
+        React | TypeScript | Zustand | Bootstrap
       </span>
     </div>
   )
