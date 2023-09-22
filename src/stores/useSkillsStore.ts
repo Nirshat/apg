@@ -5,21 +5,6 @@ const useSkillsStore = create(() => (
   {
     frontend : [
       {
-        tech: "HTML",
-        // src: "images/html.png",
-        src: "https://skillicons.dev/icons?i=html",
-      },
-      {
-        tech: "CSS",
-        // src: "images/css.png",
-        src: "https://skillicons.dev/icons?i=css",
-      },
-      {
-        tech: "JavaScript",
-        // src: "images/js.png",
-        src: "https://skillicons.dev/icons?i=js",
-      },
-      {
         tech: "React",
         // src: "images/react.png",
         src: "https://skillicons.dev/icons?i=react",
@@ -30,8 +15,9 @@ const useSkillsStore = create(() => (
         src: "https://skillicons.dev/icons?i=ts",
       },
       {
-        tech: "SCSS",
-        src: "https://skillicons.dev/icons?i=scss",
+        tech: "JavaScript",
+        // src: "images/js.png",
+        src: "https://skillicons.dev/icons?i=js",
       },
       {
         tech: "Bootstrap",
@@ -39,24 +25,33 @@ const useSkillsStore = create(() => (
         src: "https://skillicons.dev/icons?i=bootstrap",
       },
       {
-        tech: "MUI",
-        // src: "images/typescript.png",
-        src: "https://skillicons.dev/icons?i=mui",
-      },
-      {
         tech: "Tailwind",
         // src: "images/typescript.png",
         src: "https://skillicons.dev/icons?i=tailwind",
+      },
+      {
+        tech: "HTML",
+        // src: "images/html.png",
+        src: "https://skillicons.dev/icons?i=html",
+      },
+      {
+        tech: "CSS",
+        // src: "images/css.png",
+        src: "https://skillicons.dev/icons?i=css",
+      },
+      {
+        tech: "SCSS",
+        src: "https://skillicons.dev/icons?i=scss",
+      },
+      {
+        tech: "MUI",
+        // src: "images/typescript.png",
+        src: "https://skillicons.dev/icons?i=mui",
       },
     ],
 
 
     backend: [
-      {
-        tech: "Python",
-        // src: "images/laravel.png",
-        src: "https://skillicons.dev/icons?i=python",
-      },
       {
         tech: "MySQL",
         // src: "images/mysql.png",
@@ -66,6 +61,11 @@ const useSkillsStore = create(() => (
         tech: "Php",
         // src: "images/php.png",
         src: "https://skillicons.dev/icons?i=php",
+      },
+      {
+        tech: "Laravel",
+        // src: "images/laravel.png",
+        src: "https://skillicons.dev/icons?i=laravel",
       },
       {
         tech: "Node.js",
@@ -78,9 +78,9 @@ const useSkillsStore = create(() => (
         src: "https://skillicons.dev/icons?i=express",
       },
       {
-        tech: "Laravel",
+        tech: "Python",
         // src: "images/laravel.png",
-        src: "https://skillicons.dev/icons?i=laravel",
+        src: "https://skillicons.dev/icons?i=python",
       },
     ],
     
@@ -108,10 +108,6 @@ const useSkillsStore = create(() => (
       {
         tech: "XAMPP",
         src: "images/xampp.png",
-      },
-      {
-        tech: "Canva",
-        src: "images/canva.jpg",
       },
     ],
   }
