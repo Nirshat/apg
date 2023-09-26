@@ -7,7 +7,7 @@ const useContactsStore = create(() => (
       {
         imgsrc: "images/gmail2.png",
         name: "Mail",
-        link: "mailto:aronpaulgonzales1215@gmail.com",
+        link: "mailto:apg.yoojy@gmail.com",
         prelink: "Message Me!",
       },
       {

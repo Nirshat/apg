@@ -21,6 +21,14 @@ const useProjectsStore = create<State & Action>((set) => (
   {
     projArr: [
       {
+        repo: "https://github.com/Nirshat/chefweb",
+        link: "https://nirshat.github.io/chefweb/",
+        title: "ChefWeb (ongoing)",
+        prev: "projImages/chefweb.png",
+        descr: "is an online resource for meal recipes, ingredients, and step-by-step cooking instructions.",
+        techs: ["React", "TypeScript", "Zustand", "Tailwind", "SCSS"],
+      },
+      {
         repo: "https://github.com/Nirshat/expense-tracker",
         link: "https://nirshat.github.io/expense-tracker/",
         title: "Expense Tracker",

@@ -101,8 +101,9 @@ const Header = () => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          @aronpaulgonzales'
-          <i className="fa-solid fa-caret-down"></i>
+          {/* @aronpaulgonzales'
+          <i className="fa-solid fa-caret-down"></i> */}
+          <i className="fa-solid fa-bars"></i>
         </div>
 
 
