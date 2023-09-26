@@ -49,7 +49,7 @@
 }
 
 #apg1-light, #apg1-dark{
-  font-size:14px;
+  font-size:24px;
   display: flex;
   align-items:center;
   grid-gap:6px;
