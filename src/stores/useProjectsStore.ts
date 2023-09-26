@@ -26,7 +26,7 @@ const useProjectsStore = create<State & Action>((set) => (
         title: "ChefWeb (ongoing)",
         prev: "projImages/chefweb.png",
         descr: "is an online resource for meal recipes, ingredients, and step-by-step cooking instructions.",
-        techs: ["React", "TypeScript", "Zustand", "Tailwind", "SCSS"],
+        techs: ["themealdb api", "React", "TypeScript", "Zustand", "Tailwind", "SCSS"],
       },
       {
         repo: "https://github.com/Nirshat/expense-tracker",
