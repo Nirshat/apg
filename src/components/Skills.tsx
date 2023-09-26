@@ -10,18 +10,18 @@ const Skills = () => {
 
   // from zustand store
   let {frontend} = useSkillsStore();
-  let {backend} = useSkillsStore();
-  let {others} = useSkillsStore();
+  // let {backend} = useSkillsStore();
+  // let {others} = useSkillsStore();
 
 
   return (
     <>
       <div className="tech">
         <div className="skillbox">
-          <div className={mode === "light" ? 'skillabel-l' : 'skillabel-d' }>
+          {/* <div className={mode === "light" ? 'skillabel-l' : 'skillabel-d' }>
             <span> Frontend Development </span>
             <i className="fa-solid fa-code"></i>
-          </div>
+          </div> */}
 
           <div className="icons-holder">
             {frontend.map((obj, index) => (
@@ -38,7 +38,7 @@ const Skills = () => {
         </div>
 
 
-        <div className="skillbox">
+        {/* <div className="skillbox">
           <div className={mode === "light" ? 'skillabel-l' : 'skillabel-d' }>
             <span> Backend Development </span>
             <i className="fa-solid fa-code-branch"></i>
@@ -78,7 +78,7 @@ const Skills = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

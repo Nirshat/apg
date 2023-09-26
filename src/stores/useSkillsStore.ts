@@ -48,6 +48,59 @@ const useSkillsStore = create(() => (
         // src: "images/typescript.png",
         src: "https://skillicons.dev/icons?i=mui",
       },
+      {
+        tech: "MySQL",
+        // src: "images/mysql.png",
+        src: "https://skillicons.dev/icons?i=mysql",
+      },
+      {
+        tech: "Php",
+        // src: "images/php.png",
+        src: "https://skillicons.dev/icons?i=php",
+      },
+      {
+        tech: "Laravel",
+        // src: "images/laravel.png",
+        src: "https://skillicons.dev/icons?i=laravel",
+      },
+      {
+        tech: "Node.js",
+        // src: "images/nodejs.png",
+        src: "https://skillicons.dev/icons?i=nodejs",
+      },
+      {
+        tech: "Express.js",
+        // src: "images/expressjs.png",
+        src: "https://skillicons.dev/icons?i=express",
+      },
+      {
+        tech: "Python",
+        // src: "images/laravel.png",
+        src: "https://skillicons.dev/icons?i=python",
+      },
+      {
+        tech: "Vite.js",
+        // src: "images/vite.png",
+        src: "https://skillicons.dev/icons?i=vite",
+      },
+      {
+        tech: "Postman",
+        src: "https://skillicons.dev/icons?i=postman",
+      },
+      {
+        tech: "Git",
+        // src: "images/git.png",
+        src: "https://skillicons.dev/icons?i=git",
+      },
+      {
+        tech: "GitHub",
+        // src: "images/github.png",
+        src: "https://skillicons.dev/icons?i=github",
+      },
+      {
+        tech: "XAMPP",
+        src: "images/xampp.png",
+      },
     ],
 
 
