@@ -56,63 +56,43 @@ const Header = () => {
         // style={headerStyle}
       >
         {/* Dropdown -start- */}
-        <div
-          className="nav-link dropdown"
-          id="apg1"
-          role="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <i className="fa-solid fa-bars"></i>
+        <div id="apg1">
+          {navs.map((item, index) => (
+            <a
+              href={"#"+item.pageId}
+              className="dropdown-item"
+              role="button"
+              onClick={() => navHandler(item.no, item.pageId)}
+              id={item.no == navIndex ? "active" : ""}
+              key={index}
+            >
+              <i className={item.icon}>
+              </i>
+            </a>
+          ))}
         </div>
 
-
-        <ul
-          className="dropdown-menu dropdown-menu"
-          id="durapdownu"
-        >
-          {navs.map((item, index) => (
-            <li key={index}>
-              <a
-                href={"#"+item.pageId}
-                className="dropdown-item"
-                role="button"
-                onClick={() => navHandler(item.no, item.pageId)}
-                id={item.no == navIndex ? "active" : ""}
-              >
-                {item.name}
-              </a>
-            </li>
-          ))}
-        </ul>
         {/* Dropdown -end- */}
 
         {/* Navbar -start- */}
         <div id="apg2">
           @apg.
         </div>
-        <ul className="nav nav-pills" id="linksbox2">
-          {navs.map((link, index) => (
-            <li className="nav-item" id="navitem" key={index}>
-              <a
-                href={"#"+link.pageId}
-                className="nav-link"
-                id={
-                  link.no == navIndex
-                  ? "nav-link-active"
-                  : "nav-link"
-                }
-                onClick={() => navHandler(link.no, link.pageId)}
-                role="button"
-              >
-                {link.name}
-              </a>
-            </li>
-          ))}
 
-          {/* <li id="special-nav" className="nav-item">
-          </li> */}
-        </ul>
+        <div className="iconsbox">
+          {navs.map((item, index) => (
+            <a
+              href={"#"+item.pageId}
+              className={item.no === navIndex ? "navlink active" : "navlink"}
+              role="button"
+              onClick={() => navHandler(item.no, item.pageId)}
+              key={index}
+            >
+              <i className={item.icon}>
+              </i>
+            </a>
+          ))}
+        </div>
         {/* Navbar -end- */}
       </nav>
     </>
