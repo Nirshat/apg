@@ -1,0 +1,135 @@
+@use '../../src/App';
+
+/* #navbar-box-light, #navbar-box-dark{
+  width:88%;
+  margin: auto;
+  padding:1.3rem 0 !important;
+} */
+
+#navbar-box{
+  position:fixed;
+  top:0;
+  z-index:6;
+  width:93%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding:1.3rem .5rem!important;
+  background: #101010 !important;
+  background: App.$dark-th3 !important;
+}
+
+
+#apg1, #apg2{
+  font-weight: bolder;
+  letter-spacing:1px;
+  cursor: pointer;
+}
+
+#apg2{
+  display: none;
+}
+
+#navitem{
+  display: none;
+}
+
+#apg1{
+  font-size:24px;
+  display: flex;
+  align-items:center;
+  grid-gap:6px;
+}
+
+#apg1:hover{
+  color:#eee;
+}
+
+
+/* Dark Mode */
+#apg1, #apg2{
+  color:#aaa;
+}
+
+#special-nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center;
+  padding:0 0 0 1rem;
+}
+
+
+
+/* iPad */
+@media only screen and (min-width:700px){
+  #navbar-box{
+    width:90%;
+  }
+  
+}
+
+
+
+
+/* Desktop */
+@media only screen and (min-width:1204px){
+  #navbar-box{
+    /* padding:1.2rem 10.5rem !important; */
+    width:72%;
+    /* border:1px solid; */
+  }
+
+  #apg1{
+    display: none;
+  }
+  #apg2{
+    display: block;
+    font-size:15px;
+    /* border: 1px solid; */
+  }
+
+  /* #linksbox1{
+    display: none;
+  } */
+  #linksbox2{
+    display:flex;
+    /* border: 1px solid; */
+  }
+
+  #navitem{
+    display: block;
+    /* border: 1px solid; */
+  }
+
+
+
+  #nav-link{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold !important;
+  }
+
+
+
+  /* Dark Mode */
+  #nav-link{
+    color: #aaa;
+  }
+  #nav-link:hover{
+    color: #f2f2f2;
+  }
+  #nav-link-active{
+    color:#f2f2f2 !important;
+    color:#0fdd0f !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold !important;
+  }
+
+}
+
+
+// .top-space{
+//   border:1px solid #aaa;
+//   padding:3.5rem;
+// }

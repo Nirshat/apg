@@ -1,0 +1,45 @@
+/* mobile POV */
+.projList{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap:3rem;
+  justify-content: center;
+  align-items: center;
+  padding:0 ;
+  margin:0;
+}
+
+#cardbox:hover{
+  transform: scale(1.1);
+}
+
+
+
+.card-footer{
+  border:none !important;
+  background:#fff !important;
+  display: flex;
+  grid-gap:5px;
+}
+
+
+
+
+/* Desktop POV */
+@media only screen and (min-width:1024px){
+
+  .projList{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:1.6rem;
+  }
+
+  .card{
+    height:100% !important;
+  }
+  .card-img-top{
+    height:10rem;
+  }
+  
+}

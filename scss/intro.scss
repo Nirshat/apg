@@ -1,0 +1,87 @@
+
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  padding:4rem 0;
+  // gap:.5rem;
+  // min-height:100vh;
+
+  *{
+    color: #cdcdcd;
+  }
+
+  .myname{
+    text-align: center;
+    span{
+      font-size:27px;
+      font-weight: bold;
+      margin:0;
+      padding:0;
+      line-height: normal;
+    }
+  }
+
+  .p{
+    margin:0;
+    font-size:15px;
+    text-align: center;
+  }
+
+  .paa{  
+    display: flex;
+    gap:1rem;
+    margin-top:1rem;
+
+    div{
+      border-radius:10px;
+      text-align: center;
+      i{
+        font-size:30px;
+      }
+
+      i:hover{
+        transform: scale(1.2);
+        transition:.5s;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+// Tablet
+@media only screen and (min-width:767px){
+  .intro{
+    .myname{
+      span{
+        font-size:35px;
+      }
+    }
+  }
+
+}
+
+
+
+
+@media only screen and (min-width:1024px){
+  .intro{
+    .myname{
+      span{
+        font-size:38px;
+      }
+    }
+
+    .p{
+      font-size:16px;
+    }
+  }
+}
