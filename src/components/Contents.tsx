@@ -1,84 +1,45 @@
 import Intro from "./Intro";
-import About from "./About";
-import Skills from "./Skills";
-import Exp from "./Exp";
 import Projects from "./Projects";
 import GetInTouch from "./GetInTouch";
-import Footer from "./Footer";
+import usePagesStore from "../stores/usePagesStore";
+import ProInfos from "./ProInfos";
+import useNavsStore from "../stores/useNavsStore";
 
-interface ContentProps {
-  contentVal: number;
-  modeVal: string;
-}
-
-
-
-const Contents = ({modeVal }: ContentProps) => {
-  const contents = [
-    {
-      title: "",
-      descript: "",
-      value: <Intro />,
-      pageId: 0,
-      hrefno:"0",
-    },
-    {
-      title: "About.",
-      descript: "",
-      value: <About />,
-      pageId: 1,
-      hrefno:"1",
-    },
-    {
-      title: "Skills.",
-      descript: "Technologies and Tools",
-      value: <Skills />,
-      pageId: 2,
-      hrefno:"2",
-    },
-    {
-      title: "Experience.",
-      descript: "experiences i have undergone.",
-      value: <Exp />,
-      pageId: 3,
-      hrefno: "3",
-    },
-    {
-      title: "Projects.",
-      descript: "projects i have done.",
-      value: <Projects />,
-      pageId: 4,
-      hrefno: "4",
-    },
-    {
-      title: "Contacts.",
-      descript: "Social Media Links",
-      value: <GetInTouch />,
-      pageId: 5,
-      hrefno: "5",
-    },
-  ];
-
-
-  // const filteredContents = contents.filter(
-  //   (item) => item.pageId === contentVal
-  // );
-
-
+const Contents = () => {
+  const { pages } = usePagesStore();
+  const contents = [<Intro />, <ProInfos />, <Projects />, <GetInTouch />];
+  const { active } = useNavsStore();
+  const filt = pages.filter((f) => f.hrefno !== "0");
 
   return (
     <>
       <div className="main-app-box">
-        {contents.map((item) => (
-          <div className="contentBox" key={item.pageId}>
-            <div className="landing" id={item.hrefno}></div>
-            {/* <div className={modeVal === "light" ? 'title-light' : 'title-dark'}> {item.title} </div> */}
-            <div className={modeVal === "light" ? 'descript-light' : 'descript-dark'}>{item.descript} </div>
-            <div className="content"> {item.value} </div>
-            <div className="landing"></div>
+        <div>
+          <div
+            className="landing on"
+            id="0"
+          ></div>
+          <div className="contentBox">
+            <div className="content"> {contents[0]} </div>
+          </div>
+        </div>
+        {filt.map((item, index) => (
+          <div key={index}>
+            <div
+              className={item.hrefno === active ? item.hrefno !== "3" ? "landing on" : "landing" : "landing"}
+              id={item.hrefno}
+            ></div> 
+            <div className= "contentBox">
+              {item.descript !== "" ? (
+                <div className="descript">
+                  {item.descript}
+                  <br /> <br />
+                </div>
+              ) : ""}
+              <div className="content"> {contents[item.value]} </div>
+            </div>
           </div>
         ))}
-        <Footer mode={modeVal} />
       </div>
     </>
   );

@@ -1,13 +1,9 @@
+import '../../public/scss/footer.scss'
 
-
-
-interface Mode{
-  mode:string;
-}
-
-const Footer = ({mode}: Mode) => {
+const Footer = () => {
+  
   return (
-    <div className={mode === "light" ? 'footerBox-light' : 'footerBox-dark'}>
+    <div className='footerBox'>
       <div>
         Made with 💚 by Aron Paul Gonzales.All rights reserved
       </div>

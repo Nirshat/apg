@@ -1,0 +1,26 @@
+@use '../../src/App';
+
+#durapdownu{
+  left:0;
+  border:none;
+  background-color: App.$dark-th4;
+  position:absolute;
+  top:3.2rem;
+
+  background: rgba(9, 6, 55, 0.65);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 9px );
+  -webkit-backdrop-filter: blur( 9px );
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.121);
+}
+
+#durapdownu li a{
+  padding: 1rem;
+  color:#cdcdcd;
+}
+
+#active{
+  font-weight: bold;
+  color: #15c115 !important;
+}

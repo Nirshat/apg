@@ -1,0 +1,60 @@
+/* Mobile POV */
+
+
+.aboutflex{
+  /* padding:1rem; */
+  border-radius: 1rem;
+  background:transparent;
+
+  #mebox{
+    .p{
+      line-height: 1.8em;
+      /* margin: 0; */
+      text-align: justify;
+      color:#cdcdcd;
+    }
+  }
+  
+  .picbox{
+    #me{
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+
+/* iPad POV */
+@media only screen and (min-width:700px){
+
+
+}
+
+
+
+
+/* Desktop POV */
+@media only screen and (min-width:1200px){
+
+  .aboutflex{
+    display: flex !important;
+    flex-direction: row-reverse;
+    grid-gap:1.5rem;
+    align-items: center;
+
+
+    .picbox{
+      #me{
+        height:auto;
+        display: block;
+        height:18em;
+        border-radius:.9em;
+        transition: .3s;
+      }
+    }
+  }
+}
+

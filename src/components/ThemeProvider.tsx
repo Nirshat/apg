@@ -9,7 +9,7 @@ const ThemeProvider = ({ children }: AppContent) => {
   const [mode, setMode] = useState(() => {
     // Load/Read the theme from localStorage or set default
     const savedMode = localStorage.getItem("theme");
-    return savedMode || "light";
+    return savedMode || "dark";
     // return current theme or else the default theme
   });
 

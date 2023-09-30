@@ -1,15 +1,14 @@
-import {useContext} from 'react'
-import Theme from "../context/Theme";
 
+import '../../public/scss/exp.scss'
 
 const Exp = () => {
-  const {mode} = useContext(Theme);
+
   
   return (
     <>
-      <div className={mode === "light" ? 'expBox-light' : 'expBox-dark'}>
+      <div className='expBox'>
         <span id="role"> <b>Full-stack Developer</b> (Hands-on Exp.) </span>
-        <span> Alumni Tracking System (Capstone Project) </span>
+        <span> Alumni Tracker (Capstone Project) </span>
         <span> <i>Jan. 2023 - April 2023</i> </span>
         <p>
           I developed a system for administrator that organizes alumni data and allows the user to post an announcement of events. I also developed a portal site for alumni that contains announcement of events and allows the user to update their employment status.

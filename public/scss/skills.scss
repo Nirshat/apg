@@ -1,0 +1,63 @@
+@use '../../src/App';
+
+.skillbox{
+  font-weight:normal;
+  border-radius:5px;
+  width: auto;
+  text-align:center;
+
+  .icons-holder{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:.5rem;
+  
+    justify-content: flex-start;
+
+    .iconbox{
+      transition:.3s ease-out 60ms;
+      cursor:pointer;
+      padding:6px;
+      border-radius:10px;
+
+      #alt{
+        font-size: 12px;
+        text-align: center;
+        padding:2px;
+      }
+      
+      #icons > img{
+        height:3rem;
+        text-align: center;
+        border-radius:10px;
+      }
+    }
+
+    .iconbox:hover{
+      transform: scale(1.1);
+      transition:.3s ease-out 60ms;
+    }
+  }
+}
+
+
+
+
+@media only screen and (min-width:767px){
+  .skillbox{
+    .icons-holder{
+      grid-template-columns: repeat(7, 1fr);
+      gap:.6rem;
+    }
+  }
+}
+
+
+@media only screen and (min-width:1024px){
+  .skillbox{
+    .icons-holder{
+      grid-template-columns: repeat(9, 1fr);
+    }
+  }
+}
+
+

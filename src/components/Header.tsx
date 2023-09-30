@@ -1,118 +1,75 @@
 import { useState, useEffect, useContext } from "react";
-
-import Contents from "./Contents";
 import Theme from "../context/Theme";
+import '../../public/scss/header.scss'
+import '../../public/scss/dropdown.scss'
+import '../../public/scss/toggle.scss'
+import useNavsStore from "../stores/useNavsStore";
+
+
 
 const Header = () => {
 
-
-
-
   // Hide navbar/header on Scroll Down
-  const [prevScrollPos, setPrevScrollPos] = useState<number>(
-    window.scrollY || 0
-  );
-  const [visible, setVisible] = useState<boolean>(true);
+  // const [prevScrollPos, setPrevScrollPos] = useState<number>(
+  //   window.scrollY || 0
+  // );
+  // const [visible, setVisible] = useState<boolean>(true);
 
-  const handleScroll = () => {
-    const currentScrollPos = window.scrollY || 0;
-    const isScrolledUp = prevScrollPos > currentScrollPos;
+  // const handleScroll = () => {
+  //   const currentScrollPos = window.scrollY || 0;
+  //   const isScrolledUp = prevScrollPos > currentScrollPos;
 
-    setVisible(isScrolledUp);
-    setPrevScrollPos(currentScrollPos);
-  };
+  //   setVisible(isScrolledUp);
+  //   setPrevScrollPos(currentScrollPos);
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [prevScrollPos]);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [prevScrollPos]);
 
-  const headerStyle = {
-    transform: visible ? "translateY(0)" : "translateY(-100%)",
-    transition: "transform 0.1s ease-in-out",
-  };
+  // const headerStyle = {
+  //   transform: visible ? "translateY(0)" : "translateY(-100%)",
+  //   transition: "transform 0.1s ease-in-out",
+  // };
 
   
-  let navs = [
-    {
-      no: 0,
-      name: "home",
-      pageId: "0",
-    },
-    {
-      no: 1,
-      name: "about",
-      pageId: "1",
-    },
-    // {
-    //   no: 2,
-    //   name: "skills",
-    //   pageId: "2",
-    // },
-    // {
-    //   no: 3,
-    //   name: "experience",
-    //   pageId: "3",
-    // },
-    {
-      no: 4,
-      name: "projects",
-      pageId: "4",
-    },
-    {
-      no: 5,
-      name: "contacts",
-      pageId: "5",
-    },
-  ];
 
+  const {navs, setActive} = useNavsStore();
   const [navIndex, setNavIndex] = useState(0);
-  // const [clicked, setClicked] = useState(false);
 
-  const navHandler = (route: number) => {
-    if (route !== navIndex){
+  const navHandler = (route: number, key:string) => {
+    // if (route !== navIndex){
       setNavIndex(route);
-    }
+      setActive(key);
+    // }
   };
-  // if route is not equal to the current value of navIndex, it will be updated
-  // else if it's equal to the current navIndex then nothing happens
 
-  const { mode, toggleMode } = useContext(Theme);
 
-  //  trigger darkmode
-  useEffect(() => {
-    document.body.classList.toggle('dark-mode', mode === 'dark');
-  }, [mode]);
 
   return (
     <>
       <nav
-        id={mode === "light" ? "navbar-box-light" : "navbar-box-dark"}
+        id="navbar-box"
         className="navbar bg-body-tertiary px-3 mb-3"
-        style={headerStyle}
+        // style={headerStyle}
       >
         {/* Dropdown -start- */}
         <div
           className="nav-link dropdown"
-          id={mode === "light" ? "apg1-light" : "apg1-dark"}
+          id="apg1"
           role="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          {/* @aronpaulgonzales'
-          <i className="fa-solid fa-caret-down"></i> */}
           <i className="fa-solid fa-bars"></i>
         </div>
 
 
         <ul
-          className={
-            mode === "light"
-              ? "dropdown-menu dropdown-menu-light"
-              : "dropdown-menu dropdown-menu-dark"
-          }
+          className="dropdown-menu dropdown-menu"
           id="durapdownu"
         >
           {navs.map((item, index) => (
@@ -121,7 +78,7 @@ const Header = () => {
                 href={"#"+item.pageId}
                 className="dropdown-item"
                 role="button"
-                onClick={() => navHandler(item.no)}
+                onClick={() => navHandler(item.no, item.pageId)}
                 id={item.no == navIndex ? "active" : ""}
               >
                 {item.name}
@@ -132,7 +89,7 @@ const Header = () => {
         {/* Dropdown -end- */}
 
         {/* Navbar -start- */}
-        <div id={mode === "light" ? "apg2-light" : "apg2-dark"}>
+        <div id="apg2">
           @apg.
         </div>
         <ul className="nav nav-pills" id="linksbox2">
@@ -142,19 +99,11 @@ const Header = () => {
                 href={"#"+link.pageId}
                 className="nav-link"
                 id={
-                  // if
-                  mode === "light"
-                    ? link.no == navIndex
-                      ? "nav-link-light-active"
-                      : "nav-link-light"
-
-                  // else (dark)
-                  :
-                    link.no == navIndex
-                    ? "nav-link-dark-active"
-                    : "nav-link-dark"
+                  link.no == navIndex
+                  ? "nav-link-active"
+                  : "nav-link"
                 }
-                onClick={() => navHandler(link.no)}
+                onClick={() => navHandler(link.no, link.pageId)}
                 role="button"
               >
                 {link.name}
@@ -165,18 +114,8 @@ const Header = () => {
           {/* <li id="special-nav" className="nav-item">
           </li> */}
         </ul>
-
-        <label className="ui-switch">
-          <input type="checkbox" onChange={toggleMode} />
-          <div className="slider">
-            <div className="circle"></div>
-          </div>
-        </label>
         {/* Navbar -end- */}
       </nav>
-
-      {/* Containing Contents */}
-      <Contents contentVal={navIndex} modeVal={mode} />
     </>
   );
 };
