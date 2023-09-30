@@ -1,5 +1,4 @@
-import { useState, useEffect, useContext } from "react";
-import Theme from "../context/Theme";
+import { useState} from "react";
 import '../../public/scss/header.scss'
 import '../../public/scss/dropdown.scss'
 import '../../public/scss/toggle.scss'
