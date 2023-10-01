@@ -4,6 +4,8 @@ $dark-th2: #0b0b45;
 $dark-th3: #07072b;
 $dark-th4: #050524;
 
+$gradient:linear-gradient(90deg, #07072b, #0f0f56);
+
 *{
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
@@ -12,7 +14,7 @@ $dark-th4: #050524;
 
 
 body {
-  background-color: #07072b;
+  background: #07072b;
 }
 
 .main-app-box{
@@ -23,7 +25,7 @@ body {
 
 
 .landing{  /* nav landing*/
-  padding:2rem 0;
+  padding:1rem 0;
   // border: 1px solid;
 }
 
@@ -36,10 +38,13 @@ body {
 
 .contentBox{
   margin:auto;
-  width:92%;
+  width:93%;
   padding:.9rem;
   background-color: $dark-th2;
-  border-radius:10px;
+  border-radius:5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -78,6 +83,6 @@ body {
 
 
 .dark{
-  background-color: $dark-th3 !important;
+  background: $dark-th3 !important;
   color:#cdcdcd;
 }

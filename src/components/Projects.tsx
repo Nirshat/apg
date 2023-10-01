@@ -1,4 +1,4 @@
-import "../../public/scss/projectsv2.scss";
+import "../../public/scss/projects.scss";
 
 import useProjectsStore from "../stores/useProjectsStore";
 

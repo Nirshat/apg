@@ -14,15 +14,9 @@ const Contents = () => {
   return (
     <>
       <div className="main-app-box">
-        <div>
-          <div
-            className="landing on"
-            id="0"
-          ></div>
-          <div className="contentBox">
-            <div className="content"> {contents[0]} </div>
-          </div>
-        </div>
+
+        {contents[0]}
+
         {filt.map((item, index) => (
           <div key={index}>
             <div
@@ -36,7 +30,7 @@ const Contents = () => {
                   <br /> <br />
                 </div>
               ) : ""}
-              <div className="content"> {contents[item.value]} </div>
+              {contents[item.value]}
             </div>
           </div>
         ))}
