@@ -1,45 +1,148 @@
-/* mobile POV */
-.projList{
+@use '../../src/App';
+
+.accord{
   width:100%;
   display: flex;
   flex-direction: column;
-  grid-gap:3rem;
-  justify-content: center;
-  align-items: center;
-  padding:0 ;
-  margin:0;
+  gap:1.1rem;
 }
 
-#cardbox:hover{
-  transform: scale(1.1);
+.accord-item{
+  border-radius:6px;
+  .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding:.8rem .7rem;
+
+    .infobox{
+      display:flex;
+      align-items: center;
+      gap:.7rem;
+      img{
+        height:2.8rem;
+        width:4rem;
+        border-radius:5px;
+      }
+      .texts{
+        display: flex;
+        flex-direction: column;
+        .title{
+          font-size: 16px;
+          font-weight:bold;
+        }
+        .sub{
+          font-size:14px;
+          color:#a2a2a2;
+        }
+      }
+    }
+
+
+    .icon{
+      i{
+        transition:.2s;
+        font-size: 18px;
+      }
+      .active{
+        transform: rotate(180deg);
+        transition:.2s;
+      }
+    }
+    
+  }
+  .body{
+    height:0;
+    transition:.1s ease-in-out;
+    p{
+      display:none;
+    }
+  }
+
+  .body-active{
+    padding:0 1rem 1rem;
+    transition:.1s ease-in-out;
+    p{
+      display: block;
+    }
+  }
 }
 
 
+.body{
+  p{
+    display: none;
+  }
 
-.card-footer{
-  border:none !important;
-  background:#fff !important;
+  .techs{
+    display: none;
+  }
+
+  .footer{
+    display: none;
+  }
+}
+
+.body-active{
   display: flex;
-  grid-gap:5px;
+  flex-direction: column;
+  gap:1rem;
+
+  p{
+    margin:0;
+    display: block;
+  }
+
+  .techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap:.3rem;
+    span{
+      font-size:15px;
+      background:#444;
+      border-radius:10px;
+      padding:3px 10px;
+      color:#f2f2f2;
+      text-transform: lowercase;
+    }
+  }
+
+  .footer{
+    display: flex;
+    gap:.5rem;
+    justify-content: flex-end;
+
+    a{
+      color:#f2f2f2;
+    }
+  }
 }
 
 
+@media only screen and (min-width:767px){
+  .accord-item{
+    .head{
+      padding:.9rem;
+      .infobox{
+        img{
+          height:2.8rem;
+        }
+        .texts{
+          .title{
+            font-size:18px;
+          }
+        }
+      }
+    }
+  }
+}
 
 
-/* Desktop POV */
 @media only screen and (min-width:1024px){
-
-  .projList{
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:1.6rem;
+  .accord-item{
+    .head{
+      padding:.9rem;
+    }
   }
-
-  .card{
-    height:100% !important;
-  }
-  .card-img-top{
-    height:10rem;
-  }
-  
 }
