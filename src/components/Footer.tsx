@@ -8,7 +8,7 @@ const Footer = () => {
         Made with 💚 by Aron Paul Gonzales.All rights reserved
       </div>
       <span className="techs">
-        React | TypeScript | Zustand | Bootstrap
+        React | TypeScript | Zustand | Sass
       </span>
     </div>
   )
