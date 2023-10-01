@@ -9,13 +9,13 @@ const Intro = () => {
     <>
       <div className="asd">
         <div className='coverphoto'>
-          <img src="./public/supporting files/dcd.jpg" alt="" />
+          <img src="./supporting files/dcd.jpg" alt="" />
         </div>
 
 
         <div className="pakilala">
           <div className="profile">
-            <img src="./public/supporting files/ako.png" alt="" />
+            <img src="./supporting files/ako.png" alt="" />
           </div>
 
           <div>
