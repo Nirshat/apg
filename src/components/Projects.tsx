@@ -1,14 +1,25 @@
+import { useState } from "react";
 import "../../public/scss/projects.scss";
 
 import useProjectsStore from "../stores/useProjectsStore";
 
+
 const Projects = () => {
   // from zustand store
-  let { projArr, toggling } = useProjectsStore();
+  let { projArr } = useProjectsStore();
 
-  const toggle = (ind:number) => {
-    toggling(ind);
+  const [actives, setActives] = useState<String[]>([]);
+
+  const toggle = (id:string) => {
+    if(!actives.includes(id)){
+      setActives([...actives, id]);
+    }
+    else{
+      const inactive = actives.filter(actives => actives !== id);
+      setActives((prevActives) => prevActives = inactive);
+    }
   }
+
 
   return (
     <>
@@ -18,7 +29,7 @@ const Projects = () => {
             <div
               className="head"
               onClick={() =>
-                toggle(index)
+                toggle(val.id)
               }
             >
               <div className="infobox">
@@ -29,11 +40,11 @@ const Projects = () => {
                 </div>                
               </div>
               <div className="icon">
-                <i className={val.active === true ? "fa-solid fa-angle-down active" : "fa-solid fa-angle-down"}></i>
+                <i className={actives.includes(val.id) ? "fa-solid fa-angle-down active" : "fa-solid fa-angle-down"}></i>
               </div>
             </div>
 
-            <div className={val.active === true ? "body-active" : "body"}>
+            <div className={actives.includes(val.id) ? "body-active" : "body"}>
               <p>{val.descr}</p>
               <div className="techs">
                 {val.techs.map((t, index) => (

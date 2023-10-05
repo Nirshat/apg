@@ -11,27 +11,22 @@ type State = {
     descr: string
     techs: string[]
     devtype: string
-    active: boolean
   }[]
 }
 
-type Action = {
-  toggling: (ind: number) => void
-}
 
-const useProjectsStore = create<State & Action>((set) => (
+const useProjectsStore = create<State>(() => (
   {
     projArr: [
       {
         id: "chef",
         repo: "https://github.com/Nirshat/chefweb",
         link: "https://nirshat.github.io/chefweb/",
-        title: "ChefWeb (ongoing)",
+        title: "ChefWeb",
         prev: "projImages/chefweb.png",
         descr: "is an online resource for meal recipes, ingredients, and step-by-step cooking instructions.",
         techs: ["themealdb api", "React", "TypeScript", "Axios", "Zustand", "Tailwind", "SCSS"],
         devtype: "Rest API with Frontend",
-        active: false,
       },
       {
         id: "et",
@@ -42,7 +37,6 @@ const useProjectsStore = create<State & Action>((set) => (
         descr: "is a minimal app that helps you to track your expenses with log histories.",
         techs: ["React", "TypeScript", "Tailwind", "Zustand"],
         devtype: "Frontend Development",
-        active: false,
       },
       {
         id: "tdl",
@@ -54,7 +48,6 @@ const useProjectsStore = create<State & Action>((set) => (
           "is a minimal app designed to help users manage and organize their tasks effectively.",
         techs: ["React", "TypeScript", "Material UI", "Bootstrap", "CSS"],
         devtype: "Frontend Development",
-        active: false,
       },
       {
         id: "ch",
@@ -66,7 +59,6 @@ const useProjectsStore = create<State & Action>((set) => (
           "is a minimal landing page of a coffee website that i developed just to enhance my frontend skills.",
         techs: ["React", "TypeScript", "SCSS"],
         devtype: "Frontend Development",
-        active: false,
       },
       {
         id: "mph",
@@ -78,7 +70,6 @@ const useProjectsStore = create<State & Action>((set) => (
           "is a minimal website that simply renders posters of movie through api calls based from your search.",
         techs: ["React", "TypeScript", "Vanilla CSS", "OMDb API"],
         devtype: "Rest API with Frontend",
-        active: false,
       },
       {
         id: "phvq",
@@ -89,7 +80,6 @@ const useProjectsStore = create<State & Action>((set) => (
         descr: "is a simple landing page with banners of some beautiful places in philippines that i developed just to enhance my frontend skills.",
         techs: ["React", "TypeScript", "SCSS", "Glassmorphism"],
         devtype: "Frontend Development",
-        active: false,
       },
       {
         id: "atc",
@@ -101,7 +91,6 @@ const useProjectsStore = create<State & Action>((set) => (
           "is a web app that organizes alumni data and allows the admin to post an announcement of events.",
         techs: ["HTML", "CSS", "Javascript", "PHP", "MySQL", "Bootstrap", "DataTables", "Apex chart"],
         devtype: "Fullstack Development",
-        active: false,
       },
       {
         id: "apc",
@@ -113,7 +102,6 @@ const useProjectsStore = create<State & Action>((set) => (
           "is a portal site that contains announcement of events and allows the alumni to update their status info.",
         techs: ["HTML", "Vanilla CSS", "Javascript", "PHP", "MySQL"],
         devtype: "Fullstack Development",
-        active: false,
       },
       {
         id: "stq",
@@ -125,7 +113,6 @@ const useProjectsStore = create<State & Action>((set) => (
           "is a celestial-themed quiz site designed to challenge your knowledge in astronomy.",
         techs: ["React", "TypeScript", "Material UI", "CSS"],
         devtype: "Frontend Development",
-        active: false,
       },
       {
         id: "rqg",
@@ -136,21 +123,8 @@ const useProjectsStore = create<State & Action>((set) => (
         descr: "is a minimal site that generates random quotes through api calls.",
         techs: ["quotable api", "React", "TypeScript", "Axios", "Vanilla CSS"],
         devtype: "Rest API with Frontend",
-        active: false,
       },
-    ],
-
-    toggling: (ind) => {
-      set((state) => {
-        const updatedProjArr = [...state.projArr]; // Create a copy of the array
-        // Toggle the 'active' property for the project at the specified index
-        updatedProjArr[ind] = {
-          ...updatedProjArr[ind], // Create a copy of the object
-          active: updatedProjArr[ind].active === false ? true : false,
-        };
-        return { ...state, projArr: updatedProjArr };
-      });
-    },
+    ]
   }
 ));
 
