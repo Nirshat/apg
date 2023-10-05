@@ -15,8 +15,8 @@ const Projects = () => {
       setActives([...actives, id]);
     }
     else{
-      const inactive = actives.filter(actives => actives !== id);
-      setActives((prevActives) => prevActives = inactive);
+      // const inactive = actives.filter(actives => actives !== id);
+      setActives((prevActives) => prevActives.filter(prevs => prevs !== id));
     }
   }
 
