@@ -44,7 +44,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className={actives.includes(val.id) ? "body-active" : "body"}>
+            <div className={actives.includes(val.id) ? "body-active" :"body"}>
               <p>{val.descr}</p>
               <div className="techs">
                 {val.techs.map((t, index) => (
